@@ -48,6 +48,7 @@ const IndexPage = () => {
             <FreeTrialStyle1 />
 
             <FooterStyleTwo />
+       
 
         </>
     )

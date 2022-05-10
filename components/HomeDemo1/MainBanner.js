@@ -143,9 +143,10 @@ const [isOpen, setIsOpen] = React.useState(true);
  />
  {/* If you want to change the video need to update videoID */}
  <ModalVideo
-     channel='youtube'
+     channel='custom'
      isOpen={!isOpen}
-     videoId='bk7McNUjWgw'
+     videoId='https://www.seopromarvel.com/assets/SEOrevisedvideo.mp4'
+     url='https://www.seopromarvel.com/assets/SEOrevisedvideo.mp4'
      onClose={() => setIsOpen(!isOpen)}
  />
         </>
