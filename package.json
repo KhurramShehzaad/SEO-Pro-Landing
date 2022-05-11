@@ -23,6 +23,7 @@
         "react-tabs": "^3.2.2",
         "react-typewriter-effect": "^1.1.0",
         "react-typist-loop": "^1.0.0",
+        "react-zendesk": "^0.1.13",
         "sass": "^1.35.2",
         "swiper": "^6.7.5",
         "typewriter-effect": "^2.18.2",

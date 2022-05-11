@@ -47,6 +47,78 @@ const FooterStyleTwo = () => {
                     </div>
                 </div>
             </div>
+              
+    <div className="niwaxofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
+      <div className="offcanvas-body">
+        <div className="cbtn animation">
+          <div className="btnclose"> <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+        </div>
+        <div className="getintouchblock mt30">
+            <span className="text-radius text-light text-animation bg-b">Special offer</span>
+          <h4>Claim free web maintenance now</h4>
+          <p className="mt10">Signup to get more information</p>
+          <div className="media mt15">
+            <div className="icondive"><img src="images/icons/call.svg" alt="icon" /></div>
+            <div className="media-body getintouchinfo">
+              <a href="tel:"><span></span></a>
+            </div>
+          </div>
+          <div className="media mt15">
+            <div className="icondive"><img src="images/icons/whatsapp.svg" alt="icon" /></div>
+            <div className="media-body getintouchinfo">
+              <a href="https://wa.me/14692527019" target="_blank"><span></span></a>
+            </div>
+          </div>
+          <div className="media mt15">
+            <div className="icondive"><img src="images/icons/mail.svg" alt="icon" /></div>
+            <div className="media-body getintouchinfo">
+              <a href="mailto:"><span>Online Support</span></a>
+            </div>
+          </div>
+          <div className="media mt15">
+            <div className="icondive"><img src="images/icons/map.svg" alt="icon" /></div>
+            <div className="media-body getintouchinfo">
+              <a href="https://goo.gl/maps/eKnw9XUzGhwbKTo98" target="_blank">1341 W. Mockingbird Lane, Suite 600W, Dallas, Texas 75247<span>Visit Our Office</span></a>
+            </div>
+          </div>
+        </div>
+        <div className="form-block sidebarform">
+          <h4>Request A Quote</h4>
+          <form id="contactForm" data-bs-toggle="validator" className="shake mt20" action="dl_thanks.php" method="get">
+            <div className="row">
+              <div className="form-group col-sm-12">
+                <input type="text"  id="name" name="cn" placeholder="Enter name" required data-error="Please fill Out" />
+                <div className="help-block with-errors"></div>
+              </div>
+              <div className="form-group col-sm-12">
+                <input type="email"  id="email" name="em" placeholder="Enter email" required />
+                <div className="help-block with-errors"></div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="form-group col-sm-12">
+                <input type="text" id="mobile" name="pn" placeholder="Enter mobile" required data-error="Please fill Out" />
+                <div className="help-block with-errors"></div>
+              </div>
+              <div className="form-group col-sm-12">
+                <input type="text" name="url" className="" placeholder="Enter Website" required data-error="Please fill Out"/>
+                <div className="help-block with-errors"></div>
+              </div>
+            </div>
+            <div className="form-group">
+              <textarea id="message" name="msg" rows="5" placeholder="Enter your message" required></textarea>
+              <div className="help-block with-errors"></div>
+            </div>
+            <button type="submit" id="form-submit" className="btn lnk btn-main bg-btn right-pop">Submit <span className="circle"></span></button>
+            <div id="msgSubmit" className="h3 text-center hidden"></div>
+            <div className="clearfix"></div>
+          </form>
+        </div>
+        
+ 
+      </div>
+    </div>
+    
         </>
     );
 }

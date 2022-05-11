@@ -14,7 +14,26 @@ import PricingPlanStyle2 from '@/components/PricingPlan/PricingPlanStyle2';
 import ClientFeedbackStyle1 from '@/components/Feedbacks/ClientFeedbackStyle1';
 import FreeTrialStyle1 from '@/components/Common/FreeTrialStyle1';
 import FooterStyleTwo from '@/components/_App/FooterStyleTwo';
+import Zendesk from "react-zendesk";
 
+
+const setting = {
+    color: {
+      theme: "#000"
+    },
+    launcher: {
+      chatLabel: {
+        "en-US": "Need Help"
+      }
+    },
+    contactForm: {
+      fields: [
+        { id: "description", prefill: { "*": "My pre-filled description" } }
+      ]
+    }
+  };
+  const ZENDESK_KEY = "49c50e3e-ddcf-4b92-9ad2-23a3413ec38c";
+  
 const IndexPage = () => {
     return (
         <>
@@ -48,7 +67,7 @@ const IndexPage = () => {
 
 
             <FooterStyleTwo />
-
+            <Zendesk defer zendeskKey={ZENDESK_KEY} {...setting} />
 
         </>
     )

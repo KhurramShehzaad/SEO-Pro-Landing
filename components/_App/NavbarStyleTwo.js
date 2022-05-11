@@ -286,7 +286,7 @@ const [isOpen, setIsOpen] = React.useState(true);
                                     <li className="nav-item">
                                         <Link href="#">
                                             <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                            <i class="fas fa-phone-alt"></i>
+                                            <i className="fas fa-phone-alt"></i>
                                             </a>
                                         </Link>
 
