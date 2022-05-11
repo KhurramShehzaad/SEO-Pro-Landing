@@ -286,48 +286,40 @@ const [isOpen, setIsOpen] = React.useState(true);
                                     <li className="nav-item">
                                         <Link href="#">
                                             <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                                Blog
+                                            <i class="fas fa-phone-alt"></i>
                                             </a>
                                         </Link>
 
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <Link href="/blog-grid" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Blog Grid</a>
+                                                <Link href="tel:+14692527019" activeClassName="active">
+                                                    <a onClick={toggleNavbar} className="nav-link">+14692527019</a>
                                                 </Link>
                                             </li>
 
                                             <li className="nav-item">
-                                                <Link href="/blog-right-sidebar" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Blog Right Sidebar</a>
+                                                <Link href="mailto:marketing@seopromarvel.com" activeClassName="active">
+                                                    <a onClick={toggleNavbar} className="nav-link">marketing@seopromarvel.com</a>
                                                 </Link>
                                             </li>
 
-                                            <li className="nav-item">
-                                                <Link href="/blog-left-sidebar" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Blog Left Sidebar</a>
-                                                </Link>
-                                            </li>
+                                            
 
-                                            <li className="nav-item">
-                                                <Link href="/blog-details" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Blog Details</a>
-                                                </Link>
-                                            </li>
                                         </ul>
                                     </li>
 
-                                    <li className="nav-item">
-                                        <Link href="/contact" ClassName="active">
-                                            <a onClick={toggleNavbar} className="nav-link">Contact</a>
-                                        </Link>
-                                    </li>
+                                    
                                 </ul>
                             </div>
 
-                            <div className="others-options ">
+                            <div className="others-options niwaxbtnvideo">
                                 <Link href="#" >
-                                    <a className="default-btn btn-orange" onClick={e => {e.preventDefault(); openModal()}}>
+                                    <a className="default-btn btn-blue " onClick={e => {e.preventDefault(); openModal()}}>
+                                       Request A Quote
+                                    </a>
+                                </Link>
+                                <Link href="#" >
+                                    <a className="default-btn btn-orange " onClick={e => {e.preventDefault(); openModal()}}>
                                        Free Website Analysis
                                     </a>
                                 </Link>

@@ -1228,9 +1228,12 @@ textarea.form-control {
   .review-icons a{
     width: 33.33%;
   }
+  .screenshots-area{
+    padding: 40px 20px;
+  }
 }
 @media (min-width:768px){
-  .owl-stage{
+  .screenshots-area .owl-stage{
     margin-top: 260px;
   }
   .screenshots-area .owl-item:nth-child(odd):after{

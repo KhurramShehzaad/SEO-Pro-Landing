@@ -61,7 +61,7 @@ const ClientFeedbackStyle1 = () => {
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                <i class="fas fa-quote-left size-40"></i>
+                                <i className="fas fa-quote-left size-40"></i>
 
                                     <div className="title">
                                     <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
@@ -84,7 +84,7 @@ const ClientFeedbackStyle1 = () => {
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                    <i class="fas fa-quote-left size-40"></i>
+                                    <i className="fas fa-quote-left size-40"></i>
                                     <div className="title">
                                   <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
                                     </div>
@@ -106,7 +106,7 @@ const ClientFeedbackStyle1 = () => {
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                    <i class="fas fa-quote-left size-40"></i>
+                                    <i className="fas fa-quote-left size-40"></i>
                                     <div className="title">
                                       <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
                                     </div>
@@ -128,7 +128,7 @@ const ClientFeedbackStyle1 = () => {
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                    <i class="fas fa-quote-left size-40"></i>
+                                    <i className="fas fa-quote-left size-40"></i>
                                     <div className="title">
                                         <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
                                     </div>

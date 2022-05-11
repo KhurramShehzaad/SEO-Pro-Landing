@@ -1089,9 +1089,6 @@ Screenshots Area CSS
     top: 100%;
     z-index: 1;
 }
-.screenshots-slides{
-  min-height: 600px
-}
 
 .single-screenshot-item {
   text-align: center;
@@ -1108,15 +1105,14 @@ Screenshots Area CSS
 }
 .screenshots-slides.owl-theme .owl-nav {
   margin-top: 0;
-  opacity: 0;
-  visibility: hidden;
+  
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .screenshots-slides.owl-theme .owl-nav [class*=owl-] {
   position: absolute;
-  top: -60px;
+  top: 36%;
   left: 0;
   font-size: 25px;
   width: 40px;
