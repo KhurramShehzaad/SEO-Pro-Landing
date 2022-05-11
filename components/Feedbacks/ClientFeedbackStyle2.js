@@ -21,9 +21,9 @@ const ClientFeedbackStyle2 = () => {
                         <h2>What Our Customer Say About Us</h2>
                     </div>
 
-                    <Swiper 
-                        effect={'cube'} 
-                        grabCursor={true} 
+                    <Swiper
+                        effect={'cube'}
+                        grabCursor={true}
                         cubeEffect={{
                             "shadow": true,
                             "slideShadows": true,
@@ -31,7 +31,7 @@ const ClientFeedbackStyle2 = () => {
                             "shadowScale": 0.94
                         }}
                         loop={true}
-                        navigation={true} 
+                        navigation={true}
                         className="feedback-swiper-slides mySwiper"
                     >
                         <SwiperSlide>
@@ -45,7 +45,7 @@ const ClientFeedbackStyle2 = () => {
                                 </div>
 
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                                
+
                                 <div className="rating">
                                     <h5>Theme Customization</h5>
                                     <div>

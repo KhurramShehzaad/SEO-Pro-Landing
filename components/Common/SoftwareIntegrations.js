@@ -10,14 +10,25 @@ const SoftwareIntegrations = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12">
                             <div className="software-integrations-content">
-                                <span className="sub-title">SOFTWARE INTEGRATIONS</span>
-                                <h2>Easy & Perfect Solution With Latest Software Integrations</h2>
-                                <p>Cloud based storage for your data backup just log in with your mail account from play store and using whatever you want for your business purpose orem ipsum dummy text. never missyour chance its just began. backup just log in with your mail account from.</p>
-                                <p>Most provabily best  for your data backup just log in with your mail account from play store and using whatever you want for your business purpose orem ipsum dummy.</p>
+                                <span className="sub-title">DISCUSS WITH OUR TEAM</span>
+                                <h2>Want More Leads and More Customers to Grow Your Revenue?</h2>
 
-                                <Link href="/contact">
-                                    <a className="default-btn">Get Started</a>
-                                </Link>
+                                <div className="form-block wow slideInLeft" data-wow-delay=".6s">
+<form action="dl_thanks.php" method="get" name="feedback-form">
+<div className="fieldsets row">
+<div className="col-md-6"><input type="text" placeholder="Full Name" name="cn" required /></div>
+<div className="col-md-6"><input type="email" placeholder="Email Address" name="em" required /></div>
+</div>
+<div className="fieldsets row">
+<div className="col-md-6"><input type="number" placeholder="Contact Number" name="pn" required /></div>
+<div className="col-md-6"><input type="text" placeholder="Website" name="url" required /></div>
+</div>
+<div className="fieldsets"><textarea placeholder="Message" name="msg"></textarea></div>
+
+<div className="fieldsets mt20"> <button type="submit" name="submit" className="lnk btn-main bg-btn leads-form">Submit <i className="fas fa-chevron-right fa-icon"></i><span className="circle"></span></button> </div>
+<p className="trm"><i className="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
+</form>
+</div>
                             </div>
                         </div>
 
@@ -28,22 +39,22 @@ const SoftwareIntegrations = () => {
 
                                     <ul>
                                         <li>
-                                            <img src="/images/software-integrations/atlassian.png" className="atlassian" alt="atlassian" />
-                                        </li>
-                                        <li> 
-                                            <img src="/images/software-integrations/skype.png" className="skype" alt="skype" />
+                                            <img src="/images/software-integrations/adwords.png" width="64" height="64" className="atlassian" alt="AdWords" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/gdrive.png" className="gdrive" alt="gdrive" />
+                                            <img src="/images/software-integrations/google.png" width="64" height="64" className="skype" alt="Google" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/slack.png" className="slack" alt="slack" />
+                                            <img src="/images/software-integrations/w3c.png" className="gdrive" alt="W3C" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/jira.png" className="jira" alt="jira" />
+                                            <img src="/images/software-integrations/brainstorm.png" className="slack" alt="Creative" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/frame.png" className="frame" alt="frame" />
+                                            <img src="/images/software-integrations/pagespeed.png" className="jira" alt="pagespeed" />
+                                        </li>
+                                        <li>
+                                            <img src="/images/software-integrations/frame.png" className="frame" with="80" height="101" alt="frame" />
                                         </li>
                                     </ul>
                                 </div>

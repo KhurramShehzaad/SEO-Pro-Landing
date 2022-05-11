@@ -25,9 +25,12 @@ const options = {
             items: 2
         },
         992: {
-            items: 3
+            items: 2
         },
         1200: {
+            items: 2
+        },
+        1600: {
             items: 3
         }
     }
@@ -51,14 +54,15 @@ const ClientFeedbackStyle1 = () => {
                         <p ><strong>Check our customers success stories.</strong></p>
                     </div>
 
-                    {display ? <OwlCarousel 
+                    {display ? <OwlCarousel
                         className="feedback-slides owl-carousel owl-theme"
                         {...options}
-                    > 
+                    >
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                    <img src="images/icons/left-quote.svg" width="40" height="40" alt="Quote" />
+                                <i class="fas fa-quote-left size-40"></i>
+
                                     <div className="title">
                                     <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
                                     </div>
@@ -80,10 +84,9 @@ const ClientFeedbackStyle1 = () => {
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                    <img src="/images/user/user2.jpg" alt="user" />
+                                    <i class="fas fa-quote-left size-40"></i>
                                     <div className="title">
-                                        <h3>Londynn Vargas</h3>
-                                        <span>PHP Developer</span>
+                                  <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
                                     </div>
                                 </div>
                             </div>
@@ -103,10 +106,9 @@ const ClientFeedbackStyle1 = () => {
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                    <img src="/images/user/user3.jpg" alt="user" />
+                                    <i class="fas fa-quote-left size-40"></i>
                                     <div className="title">
-                                        <h3>James Andy</h3>
-                                        <span>Moodle Developer</span>
+                                      <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
                                     </div>
                                 </div>
                             </div>
@@ -126,10 +128,9 @@ const ClientFeedbackStyle1 = () => {
                         <div className="single-feedback-box">
                             <div className="client-info">
                                 <div className="d-flex align-items-center">
-                                    <img src="/images/user/user4.jpg" alt="user" />
+                                    <i class="fas fa-quote-left size-40"></i>
                                     <div className="title">
-                                        <h3>David Warner</h3>
-                                        <span>Python Developer</span>
+                                        <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
                                     </div>
                                 </div>
                             </div>

@@ -136,6 +136,57 @@ h3 {
     font-size: 34px;
     line-height: 36px;
 }
+.form-block p.trm {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0;
+}
+.review-icons a {
+    display: inline-block;
+    padding: 0 20px;
+}
+#review-vid-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+}
+.review-vid-details p {
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+}
+#review-vid-details:before{
+  content: none
+}
+.vid-ico {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    background: #fff;
+    border-radius: 1000px;
+    transition: all .3s ease-in-out 0s;
+    cursor: pointer;
+    outline: 0;
+    position: relative;
+    padding: 10px;
+    align-items: center;
+    color:#ff2d8d;
+}
+.form-block button {
+    width: 100%;
+}
+.software-integrations-area {
+    background: #d6fffc;
+    background: -moz-linear-gradient(top, #d6fffc 0, #ffeff5 100%);
+    background: -webkit-linear-gradient(top, #d6fffc 0, #ffeff5 100%);
+    background: linear-gradient(to bottom, #d6fffc 0, #ffeff5 100%);
+}
 .main-banner-area .shape-overlay::before {
   left: 0;
   right: 0;
@@ -180,8 +231,16 @@ h3 {
 }
 .whychooseniwax {
   display: grid;
-  grid-template-columns: 150px auto 150px;
+
   grid-gap: 30px;
+}
+@media (min-width:900px) {
+.whychooseniwax{
+    grid-template-columns: 150px auto 150px;
+}
+.free-cta-title{
+  display: inline-flex;
+}
 }
 .bg-gradient1 {
   background: #ffe2e2;
@@ -435,9 +494,7 @@ list-style-type: none;
     color: #050748;
     margin: 0 30px 0 0;
 }
-.free-cta-title {
-    display: inline-flex;
-}
+
 .-cta-btn p span {
     font-weight: 700;
 }
@@ -486,6 +543,10 @@ padding: 20px 0;
           transform: translateY(-50%);
 }
 
+
+.col-md-6.text-left, .col-md-8.text-left{
+  padding: 0 30px;
+}
 .features-content .features-list li .icon.bg2 {
   background: linear-gradient(44.44deg, #FF4B3F 7.79%, #FFAC30 94.18%);
 }
@@ -552,16 +613,21 @@ grid-gap: 15px;
   background-color: var(--whiteColor);
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  padding: 40px 30px 35px 110px;
+  padding: 40px 15px 35px 90px;
   margin-bottom: 25px;
   border-radius: 5px;
   position: relative;
   z-index: 1;
 }
+.video-box.top{
+  position: absolute;
+    top: 0;
+    right: 56px;
+}
 
 .single-features-item .icon {
   top: 40px;
-  left: 30px;
+  left: 15px;
   width: 60px;
   height: 60px;
   font-size: 25px;
@@ -685,14 +751,18 @@ Video Area CSS
 .video-box img {
   border-radius: 10px;
 }
+.size-40{
+  font-size: 40px;
+  width: 100%;
+}
 
 .video-box .video-btn {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  font-size: 60px;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
   text-align: center;
-  line-height: 100px;
+  line-height: 80px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -765,9 +835,74 @@ App Progress Area CSS
 .app-progress-content .default-btn {
   margin-top: 10px;
 }
-
-.app-progress-image {
-  padding-right: 15px;
+.pricevalue h2 {
+    font-size: 34px;
+    line-height: 44px;
+        margin: 0;
+}
+.priceodernow {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.livechatbtn:hover {
+    color: #018f41;
+}
+.livechatbtn {
+    color: #050748;
+    font-weight: 600;
+    line-height: 1;
+}
+.active .priceoffer {
+    background: #ff3381;
+}
+.pricingfooter {
+    background: #f8f8ff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 30px;
+    border-bottom-left-radius: 14px;
+border-bottom-right-radius: 14px;
+}
+ .single-pricing-box.active .title{
+  background-color: #e9e9ff;
+}
+.livechatbtn span {
+    display: block;
+    font-size: 14px;
+}
+.iner-prce {
+    font-size: 14px;
+    line-height: 14px;
+}
+.priceoffer {
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%, 15% 0%);
+    background: #007dff;
+    text-align: center;
+    padding: 10px 20px;
+}
+.priceoffer h2 {
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff;
+        margin: 0;
+}
+.priceoffer h2 span {
+    display: block;
+    text-decoration: line-through;
+    font-size: 20px;
+    line-height: 30px;
+}
+.pricingrate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0 0 20px;
 }
 
 /*================================================
@@ -927,21 +1062,50 @@ Screenshots Area CSS
   z-index: 1;
 }
 
-.screenshots-area.bg-color::before {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: '';
-  z-index: -1;
-  height: 55%;
-  position: absolute;
-  background-color: var(--blackColor);
+.timeline__content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #333;
+    display: block;
+    padding: 1.25rem;
+    position: relative;
+}
+.timeline__content h2 {
+    line-height: 22px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.625rem;
+}
+.timeline__item .timeline__content:before {
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #f02c95;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 100%;
+    z-index: 1;
+}
+.screenshots-slides{
+  min-height: 600px
 }
 
 .single-screenshot-item {
   text-align: center;
 }
-
+.timeline__content:after, .timeline__content:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    width: 0;
+}
 .screenshots-slides.owl-theme .owl-nav {
   margin-top: 0;
   opacity: 0;
@@ -1362,9 +1526,9 @@ Feedback Area CSS
 }
 
 .single-feedback-box .client-info img {
-  height: 60px;
-  border-radius: 50%;
-  width: 60px !important;
+
+
+  width: 100% !important;
 }
 
 .single-feedback-box .client-info .title {

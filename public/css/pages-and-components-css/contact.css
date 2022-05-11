@@ -63,9 +63,12 @@
 .contact-info-inner .single-contact-info-box h3:last-child {
   margin-bottom: 0;
 }
+.modal-video-body{
+  max-width: 1120px;
+}
 
 .contact-form {
-  max-width: 950px;
+  max-width: 650px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;

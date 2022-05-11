@@ -10,7 +10,7 @@ import AppProgressStyle1 from '@/components/Common/AppProgressStyle1';
 import AppDownloadStyle1 from '@/components/Common/AppDownloadStyle1';
 import AppScreenshotsStyle1 from '@/components/AppScreenshots/AppScreenshotsStyle1';
 import SoftwareIntegrations from '@/components/Common/SoftwareIntegrations';
-import PricingPlanStyle1 from '@/components/PricingPlan/PricingPlanStyle1';
+import PricingPlanStyle2 from '@/components/PricingPlan/PricingPlanStyle2';
 import ClientFeedbackStyle1 from '@/components/Feedbacks/ClientFeedbackStyle1';
 import FreeTrialStyle1 from '@/components/Common/FreeTrialStyle1';
 import FooterStyleTwo from '@/components/_App/FooterStyleTwo';
@@ -26,29 +26,29 @@ const IndexPage = () => {
             <Features />
             <WebsitePlatforms />
 
-
+<PricingPlanStyle2 />
 
 
 <ClientFeedbackStyle1 />
-            <KeyFeatures />
+
 
 
             <AppProgressStyle1 />
-
-            <AppDownloadStyle1 />
+<KeyFeatures />
+            
 
             <AppScreenshotsStyle1 />
 
             <SoftwareIntegrations />
 
-            <PricingPlanStyle1 />
 
-            
 
-            <FreeTrialStyle1 />
+
+
+
 
             <FooterStyleTwo />
-       
+
 
         </>
     )

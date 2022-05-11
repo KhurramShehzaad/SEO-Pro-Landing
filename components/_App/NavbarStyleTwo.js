@@ -2,10 +2,20 @@
 
 import React from "react";
 import Link from '@/utils/ActiveLink';
+import dynamic from 'next/dynamic';
+
+const ModalVideo = dynamic(() => import('react-modal-video'), {
+    ssr: false
+});
 
 const NavbarStyleTwo = () => {
+  // Popup Video
+const [isOpen, setIsOpen] = React.useState(true);
+  const openModal = () => {
+      setIsOpen(!isOpen);
+  }
     const [menu, setMenu] = React.useState(true)
- 
+
     const toggleNavbar = () => {
         setMenu(!menu)
     }
@@ -18,10 +28,10 @@ const NavbarStyleTwo = () => {
             } else {
                 elementId.classList.remove("is-sticky");
             }
-        });  
-        window.scrollTo(0, 0); 
-    }) 
- 
+        });
+        window.scrollTo(0, 0);
+    })
+
     const classOne = menu ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
     const classTwo = menu ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
@@ -37,13 +47,13 @@ const NavbarStyleTwo = () => {
                                 </a>
                             </Link>
 
-                            <button 
-                                onClick={toggleNavbar} 
+                            <button
+                                onClick={toggleNavbar}
                                 className={classTwo}
-                                type="button" 
-                                data-toggle="collapse" 
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                                aria-expanded="false" 
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
                                 aria-label="Toggle navigation"
                             >
                                 <span className="icon-bar top-bar"></span>
@@ -111,7 +121,7 @@ const NavbarStyleTwo = () => {
                                                 <Link href="/about-simple" activeClassName="active">
                                                     <a onClick={toggleNavbar} className="nav-link">About Simple</a>
                                                 </Link>
-                                            </li> 
+                                            </li>
 
                                             <li className="nav-item">
                                                 <Link href="/about-modern" activeClassName="active">
@@ -167,7 +177,7 @@ const NavbarStyleTwo = () => {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        
+
                                                         <div className="col">
                                                             <h6 className="submenu-title">Pages II</h6>
                                                             <ul className="megamenu-submenu">
@@ -263,7 +273,7 @@ const NavbarStyleTwo = () => {
                                                 <Link href="/features" activeClassName="active">
                                                     <a onClick={toggleNavbar} className="nav-link">Features 1</a>
                                                 </Link>
-                                            </li> 
+                                            </li>
 
                                             <li className="nav-item">
                                                 <Link href="/features-2" activeClassName="active">
@@ -298,27 +308,27 @@ const NavbarStyleTwo = () => {
                                                     <a onClick={toggleNavbar} className="nav-link">Blog Left Sidebar</a>
                                                 </Link>
                                             </li>
-                                            
+
                                             <li className="nav-item">
                                                 <Link href="/blog-details" activeClassName="active">
                                                     <a onClick={toggleNavbar} className="nav-link">Blog Details</a>
                                                 </Link>
-                                            </li> 
+                                            </li>
                                         </ul>
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link href="/contact" activeClassName="active">
+                                        <Link href="/contact" ClassName="active">
                                             <a onClick={toggleNavbar} className="nav-link">Contact</a>
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div className="others-options">
-                                <Link href="/contact">
-                                    <a className="default-btn">
-                                        Get Started
+                            <div className="others-options ">
+                                <Link href="#" >
+                                    <a className="default-btn btn-orange" onClick={e => {e.preventDefault(); openModal()}}>
+                                       Free Website Analysis
                                     </a>
                                 </Link>
                             </div>
@@ -326,6 +336,13 @@ const NavbarStyleTwo = () => {
                     </div>
                 </div>
             </div>
+            <ModalVideo
+    channel='custom'
+    isOpen={!isOpen}
+    videoId='https://www.seopromarvel.com/assets/SEOrevisedvideo.mp4'
+    url='/contact'
+    onClose={() => setIsOpen(!isOpen)}
+/>
         </>
     );
 }

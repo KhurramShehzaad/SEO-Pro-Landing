@@ -691,7 +691,7 @@ Feedback Area CSS
 Pricing Area CSS
 =================================================*/
 .single-pricing-box {
-  padding: 50px;
+    border-radius: 14px;
   margin-bottom: 25px;
   position: relative;
   border: 1px solid #eee;
@@ -701,11 +701,17 @@ Pricing Area CSS
 }
 
 .single-pricing-box .title {
-  margin-bottom: 25px;
+
+  padding: 30px 20px;
+  background: #f8f8ff;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 70px;
+    background-image: url(/images/icons/plan-1.svg);
 }
 
 .single-pricing-box .title h3 {
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 5px;
 }
 
@@ -725,17 +731,22 @@ Pricing Area CSS
 }
 
 .single-pricing-box .features-list {
-  padding-left: 0;
   list-style-type: none;
-  margin-top: 35px;
-  margin-bottom: 0;
+  overflow-y: scroll;
+max-height: 310px;
+height: 310px;
+padding: 20px;
+background-color: #f8f8ff;
+margin: 30px 20px;
+border: 1px solid #e8e8e8;
+border-radius: 14px 0 0 14px;
 }
 
 .single-pricing-box .features-list li {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   position: relative;
   padding-left: 25px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -746,6 +757,7 @@ Pricing Area CSS
   color: #36CC72;
   position: absolute;
 }
+
 
 .single-pricing-box .features-list li i.ri-close-line {
   color: red;
@@ -1055,9 +1067,7 @@ Partner Area CSS
   .single-pricing-box {
     padding: 20px;
   }
-  .single-pricing-box .title {
-    margin-bottom: 20px;
-  }
+
   .single-pricing-box .title h3 {
     font-size: 16px;
   }
@@ -1246,9 +1256,7 @@ Partner Area CSS
   .single-pricing-box {
     padding: 30px;
   }
-  .single-pricing-box .title {
-    margin-bottom: 20px;
-  }
+
   .single-pricing-box .title h3 {
     font-size: 18px;
   }

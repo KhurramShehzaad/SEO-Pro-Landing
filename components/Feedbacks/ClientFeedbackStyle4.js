@@ -48,7 +48,7 @@ const ClientFeedbackStyle4 = () => {
                         <div className="col-lg-4 col-md-12">
                             <div className="feedback-section-title">
                                 <span className="sub-title">CLIENT REVIEWS</span>
-                                <h2>What Our Customer Say About Us</h2>
+                                <h2>What Our Customer Say About Uss</h2>
                             </div>
                         </div>
 
@@ -56,7 +56,7 @@ const ClientFeedbackStyle4 = () => {
                             {display ? <OwlCarousel 
                                 className="feedback-slides-two owl-carousel owl-theme"
                                 {...options}
-                            >  
+                            >
                                 <div className="single-feedback-box">
                                     <div className="client-info">
                                         <div className="d-flex align-items-center">
@@ -69,7 +69,7 @@ const ClientFeedbackStyle4 = () => {
                                     </div>
 
                                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."</p>
-                                    
+
                                     <div className="rating d-flex align-items-center justify-content-between">
                                         <h5>Theme Customization</h5>
                                         <div>

@@ -7,7 +7,7 @@ const options = {
     loop: true,
     margin: 25,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     navText: [
         "<i class='ri-arrow-left-s-line'></i>",
@@ -45,31 +45,61 @@ const AppScreenshotsStyle1 = () => {
             <div className="screenshots-area bg-color ptb-100">
                 <div className="container">
                     <div className="section-title">
-                        <span className="sub-title">APP SCREENS</span>
-                        <h2>Beautifully Crafted All App Screenshots</h2>
+                        <span className="sub-title">WHAT OUR CLIENTS SAY ABOUT US.</span>
+                        <h2>Over 1200+ Satisfied Clients and Growing</h2>
                     </div>
 
-                    {display ? <OwlCarousel 
+                    {display ? <OwlCarousel
                         className="screenshots-slides owl-carousel owl-theme"
                         {...options}
-                    > 
-                        <div className="single-screenshot-item">
-                            <img src="/images/screenshots/screenshots1.png" alt="screenshots" />
+                    >
+                        <div className="single-screenshot-item top">
+                        <div className="timeline__item" >
+<div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
+<h2>Keyword Report</h2>
+<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+</div></div></div>
+</div>
                         </div>
                         <div className="single-screenshot-item">
-                            <img src="/images/screenshots/screenshots2.png" alt="screenshots" />
+                        <div className="timeline__item" >
+<div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
+<h2>Keyword Report</h2>
+<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+</div></div></div>
+</div>
                         </div>
                         <div className="single-screenshot-item">
-                            <img src="/images/screenshots/screenshots3.png" alt="screenshots" />
+                        <div className="timeline__item" >
+<div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
+<h2>Keyword Report</h2>
+<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+</div></div></div>
+</div>
                         </div>
                         <div className="single-screenshot-item">
-                            <img src="/images/screenshots/screenshots4.png" alt="screenshots" />
+                        <div className="timeline__item" >
+<div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
+<h2>Keyword Report</h2>
+<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+</div></div></div>
+</div>
                         </div>
                         <div className="single-screenshot-item">
-                            <img src="/images/screenshots/screenshots5.png" alt="screenshots" />
+                        <div className="timeline__item" >
+<div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
+<h2>Keyword Report</h2>
+<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+</div></div></div>
+</div>
                         </div>
                         <div className="single-screenshot-item">
-                            <img src="/images/screenshots/screenshots4.png" alt="screenshots" />
+                        <div className="timeline__item" >
+<div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
+<h2>Keyword Report</h2>
+<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+</div></div></div>
+</div>
                         </div>
                     </OwlCarousel> : ''}
                 </div>

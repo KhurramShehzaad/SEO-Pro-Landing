@@ -1,9 +1,7 @@
 import React, { useState, useEffect }  from 'react'
 import Link from 'next/link'
 import ScrollAnimation from 'react-animate-on-scroll'
-
 import Typewriter from 'typewriter-effect'
-
 import Script from 'next/script'
 import dynamic from 'next/dynamic';
 
@@ -31,7 +29,7 @@ const [isOpen, setIsOpen] = React.useState(true);
                                 <span className="text-effect-1">Logical SEO Services Provider</span>
                                 <h1 className="wow fadeIn mt20 mb30" >SEO Expert Company We Provide  <span className="typer" id="main" data-words="Competitor analysis, Keyword Research, On-page Audit, On-page Optimization, Off-page Optimization, GMB Optimization " data-delay="100" data-deletedelay="1000"></span> <span className="cursorx" data-owner="first-typer">|</span></h1>
                                 <p className="wow fadeIn" >SEO Pro Marvel is a well-known company in the SEO industry that attracts new clients and leads to your website. Our SEO specialists keep themselves updated with new google optimization techniques with an ultimate focus on generating leads and revenue for our clients. We at SEO Pro Marvel not only acts as your SEO marketing team but as your branding team as well.</p>
-                                <div className="video-box">
+                                <div className="video-box top">
                                 <div
                                     onClick={e => {e.preventDefault(); openModal()}}
                                     className="video-btn popup-youtube"
@@ -47,7 +45,7 @@ const [isOpen, setIsOpen] = React.useState(true);
                                     </Link>
 
                                                       <div className="video-btn  d-flex v-center gap10">
-                                                        
+
                                                         <div className="title-hero col-sm-12">
                                                         <Link href="/">
                                                             <a className="default-btn btn-blue">Click to find out why you are in the right place!</a>
