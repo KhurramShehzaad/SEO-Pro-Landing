@@ -2,9 +2,10 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Script from 'next/script'
 
 const FooterStyleTwo = () => {
-    
+
     const currentYear = new Date().getFullYear();
 
     return (
@@ -20,10 +21,10 @@ const FooterStyleTwo = () => {
                 <Link href="mailto:marketing@seopromarvel.com">
                 <a>marketing@seopromarvel.com<span>→</span></a>
                 </Link >
-                <Link href="tel:+14692527019"> 
+                <Link href="tel:+14692527019">
                 <a >+14692527019<span>→</span></a>
                 </Link>
-                
+
                 </div>
                 </div>
                 </div>
@@ -41,84 +42,30 @@ const FooterStyleTwo = () => {
                 </div>
                 </div>
 
-                    
+
                     <div className="copyright-area light-color">
                         <p>Copyright &copy; {currentYear} <strong>SEO Pro Marvel</strong>. All Rights Reserved by <a href="https://seopromarvel.com/" target="_blank">SEO Pro Marvel</a></p>
                     </div>
                 </div>
             </div>
-              
-    <div className="niwaxofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
-      <div className="offcanvas-body">
-        <div className="cbtn animation">
-          <div className="btnclose"> <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
-        </div>
-        <div className="getintouchblock mt30">
-            <span className="text-radius text-light text-animation bg-b">Special offer</span>
-          <h4>Claim free web maintenance now</h4>
-          <p className="mt10">Signup to get more information</p>
-          <div className="media mt15">
-            <div className="icondive"><img src="images/icons/call.svg" alt="icon" /></div>
-            <div className="media-body getintouchinfo">
-              <a href="tel:"><span></span></a>
-            </div>
-          </div>
-          <div className="media mt15">
-            <div className="icondive"><img src="images/icons/whatsapp.svg" alt="icon" /></div>
-            <div className="media-body getintouchinfo">
-              <a href="https://wa.me/14692527019" target="_blank"><span></span></a>
-            </div>
-          </div>
-          <div className="media mt15">
-            <div className="icondive"><img src="images/icons/mail.svg" alt="icon" /></div>
-            <div className="media-body getintouchinfo">
-              <a href="mailto:"><span>Online Support</span></a>
-            </div>
-          </div>
-          <div className="media mt15">
-            <div className="icondive"><img src="images/icons/map.svg" alt="icon" /></div>
-            <div className="media-body getintouchinfo">
-              <a href="https://goo.gl/maps/eKnw9XUzGhwbKTo98" target="_blank">1341 W. Mockingbird Lane, Suite 600W, Dallas, Texas 75247<span>Visit Our Office</span></a>
-            </div>
-          </div>
-        </div>
-        <div className="form-block sidebarform">
-          <h4>Request A Quote</h4>
-          <form id="contactForm" data-bs-toggle="validator" className="shake mt20" action="dl_thanks.php" method="get">
-            <div className="row">
-              <div className="form-group col-sm-12">
-                <input type="text"  id="name" name="cn" placeholder="Enter name" required data-error="Please fill Out" />
-                <div className="help-block with-errors"></div>
-              </div>
-              <div className="form-group col-sm-12">
-                <input type="email"  id="email" name="em" placeholder="Enter email" required />
-                <div className="help-block with-errors"></div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="form-group col-sm-12">
-                <input type="text" id="mobile" name="pn" placeholder="Enter mobile" required data-error="Please fill Out" />
-                <div className="help-block with-errors"></div>
-              </div>
-              <div className="form-group col-sm-12">
-                <input type="text" name="url" className="" placeholder="Enter Website" required data-error="Please fill Out"/>
-                <div className="help-block with-errors"></div>
-              </div>
-            </div>
-            <div className="form-group">
-              <textarea id="message" name="msg" rows="5" placeholder="Enter your message" required></textarea>
-              <div className="help-block with-errors"></div>
-            </div>
-            <button type="submit" id="form-submit" className="btn lnk btn-main bg-btn right-pop">Submit <span className="circle"></span></button>
-            <div id="msgSubmit" className="h3 text-center hidden"></div>
-            <div className="clearfix"></div>
-          </form>
-        </div>
-        
- 
-      </div>
-    </div>
+
     
+    <Script
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+    __html: `
+
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?4N09pK5EDVD29oYXjL1iCm9b3lMMEMWc";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+
+$zopim(function() {
+$zopim.livechat.window.show();
+});`,
+    }}
+    />
         </>
     );
 }

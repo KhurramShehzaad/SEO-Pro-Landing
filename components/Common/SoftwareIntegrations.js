@@ -14,7 +14,7 @@ const SoftwareIntegrations = () => {
                                 <h2>Want More Leads and More Customers to Grow Your Revenue?</h2>
 
                                 <div className="form-block wow slideInLeft" data-wow-delay=".6s">
-<form action="dl_thanks.php" method="get" name="feedback-form">
+<form action="https://seopromarvel.com/server.php" method="get" name="feedback-form">
 <div className="fieldsets row">
 <div className="col-md-6"><input type="text" placeholder="Full Name" name="cn" required /></div>
 <div className="col-md-6"><input type="email" placeholder="Email Address" name="em" required /></div>

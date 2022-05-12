@@ -4,7 +4,7 @@ import Link from 'next/link';
 const KeyFeatures = () => {
     return (
         <>
-            <div className="features-area ptb-100 bg-F7F7FF">
+            <div className="features-area ptb-100 bg-F7F7FF" id="keyfeatures">
                 <div className="container">
                     <div className="section-title">
                         <span className="sub-title">WE OFFER THE BEST MARKETING SEO SERVICES</span>
@@ -78,9 +78,10 @@ const KeyFeatures = () => {
                             <div className="-cta-btn mt70"><div className="free-cta-title v-center ">
                             <p>Hire a <span>Personal SEO Consultant</span>
                             </p>
-                            <Link href="#">
-                                <a className="default-btn btn-orange">Inquire Now</a>
+                            <Link href="#keyfeatures">
+                                <a className="default-btn btn-orange" onClick="function show()">Inquire Now</a>
                             </Link>
+
                             </div></div>
 
                             </div>

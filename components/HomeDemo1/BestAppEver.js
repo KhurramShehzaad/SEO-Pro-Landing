@@ -2,8 +2,18 @@ import React from 'react';
 import Link from 'next/link';
 import ScrollAnimation from 'react-animate-on-scroll';
 import TrustedPartners from '@/components/HomeDemo1/TrustedPartners'
+import dynamic from 'next/dynamic';
+import ContactForm from '@/components/Contact/ContactForm'
+
+const ModalVideo = dynamic(() => import('react-modal-video'), {
+    ssr: false
+});
 
 const BestAppEver = () => {
+  const [isOpen, setIsOpen] = React.useState(true);
+    const openModal = () => {
+        setIsOpen(!isOpen);
+    }
     return (
         <>
         <section className="dg-service2 pad-tb" id="services">
@@ -33,12 +43,11 @@ const BestAppEver = () => {
 
 
                                 <div className="btn-box">
-                                    <Link href="#">
-                                        <a className="default-btn btn-blue">Get In Touch With Us</a>
+                                      <ContactForm />
+                                    <Link href="#services">
+                                        <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
                                     </Link>
-                                    <Link href="#">
-                                        <a className="default-btn btn-orange">Live Chat</a>
-                                    </Link>
+                                  
 
                                 </div>
                             </div>
@@ -63,6 +72,14 @@ const BestAppEver = () => {
                     <img src="images/shape/bg-shape1.png" alt="bg-shape" />
                 </div>
             </div>
+            {/* If you want to change the video need to update videoID */}
+            <ModalVideo
+                channel='custom'
+                isOpen={!isOpen}
+                videoId='https://www.seopromarvel.com/assets/SEOrevisedvideo.mp4'
+                url='/contact'
+                onClose={() => setIsOpen(!isOpen)}
+            />
         </>
     )
 }

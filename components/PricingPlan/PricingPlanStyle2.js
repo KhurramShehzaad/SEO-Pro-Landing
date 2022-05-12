@@ -1,10 +1,20 @@
 import React from 'react';
 import Link from 'next/link'
+import Script from 'next/script'
+import dynamic from 'next/dynamic';
+
+const ModalVideo = dynamic(() => import('react-modal-video'), {
+    ssr: false
+});
 
 const PricingPlanStyle2 = () => {
+  const [isOpen, setIsOpen] = React.useState(true);
+  const openModal = () => {
+      setIsOpen(!isOpen);
+  }
     return (
         <>
-            <div className="pricing-area pt-100 pb-75">
+            <div className="pricing-area pt-100 pb-75" id="pricing">
                 <div className="container">
                     <div className="section-title">
                         <span className="sub-title">OUR SEO SERVICES PRICING</span>
@@ -64,14 +74,17 @@ const PricingPlanStyle2 = () => {
                                 <div className="priceodernow">
 <div className="priceoderbtn">
 <Link href="#">
-    <a className="default-btn btn-blue">Order Now</a>
+    <a className="default-btn btn-blue" onClick={e => {e.preventDefault(); openModal()}}>Order Now</a>
 </Link>
 </div>
 <div className="priceaskwithus">
-<a href="#" className="livechatbtn d-flex gap10 v-center">
+<Link href="#pricing">
+<a className="livechatbtn d-flex gap10 v-center"  onClick="function show()" >
 <i className="fas fa-comment"></i>
 <div><span>Click here to</span> Live Chat </div>
 </a>
+</Link>
+
 </div>
 </div>
 <div className="pricingfooter mt30">
@@ -133,14 +146,16 @@ const PricingPlanStyle2 = () => {
                                 <div className="priceodernow">
 <div className="priceoderbtn">
 <Link href="#">
-    <a className="default-btn btn-orange">Order Now</a>
+    <a className="default-btn btn-orange" onClick={e => {e.preventDefault(); openModal()}}>Order Now</a>
 </Link>
 </div>
 <div className="priceaskwithus">
-<a href="#" className="livechatbtn d-flex gap10 v-center">
+<Link href="#pricing">
+<a className="livechatbtn d-flex gap10 v-center"  onClick="function show()" >
 <i className="fas fa-comment"></i>
 <div><span>Click here to</span> Live Chat </div>
 </a>
+</Link>
 </div>
 </div>
 <div className="pricingfooter mt30">
@@ -204,14 +219,16 @@ const PricingPlanStyle2 = () => {
                                 <div className="priceodernow">
 <div className="priceoderbtn">
 <Link href="#">
-    <a className="default-btn btn-blue">Order Now</a>
+    <a className="default-btn btn-blue" onClick={e => {e.preventDefault(); openModal()}}>Order Now</a>
 </Link>
 </div>
 <div className="priceaskwithus">
-<a href="#" className="livechatbtn d-flex gap10 v-center">
+<Link href="#pricing">
+<a className="livechatbtn d-flex gap10 v-center"  onClick="function show()" >
 <i className="fas fa-comment"></i>
 <div><span>Click here to</span> Live Chat </div>
 </a>
+</Link>
 </div>
 </div>
 <div className="pricingfooter mt30">
@@ -232,6 +249,14 @@ const PricingPlanStyle2 = () => {
                     <img src="/images/shape/shape15.png" alt="shape" />
                 </div>
             </div>
+            {/* If you want to change the video need to update videoID */}
+<ModalVideo
+    channel='custom'
+    isOpen={!isOpen}
+    videoId='https://www.seopromarvel.com/assets/SEOrevisedvideo.mp4'
+    url='/contact'
+    onClose={() => setIsOpen(!isOpen)}
+/>
         </>
     )
 }

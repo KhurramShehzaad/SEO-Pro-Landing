@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-
+import ContactForm from '@/components/Contact/ContactForm'
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
 });
@@ -19,9 +19,10 @@ const [isOpen, setIsOpen] = React.useState(true);
   const openModals = () => {
       setIsOpens(!isOpen);
   }
+
     return (
         <>
-            <div className="app-progress-area ptb-100">
+            <div className="app-progress-area ptb-100" id="trust">
                 <div className="container">
                 <div className="row justify-content-center">
                 <div className="col-lg-8 section-title">
@@ -71,8 +72,11 @@ const [isOpen, setIsOpen] = React.useState(true);
                             <div className="col-md-12 mt-4 text-center">
                             <h4>Contact Us Now! And Let Us Handle Your Marketing Dilemmas!</h4>
                             <div className="btn-box mt-4 justify-content-center">
-                           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-                          <a href="#" className="default-btn btn-orange">Live Chat</a>
+                          <ContactForm />
+
+                          <Link href="#trust">
+                              <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+                          </Link>
                           </div>
                             </div>
 
@@ -115,6 +119,7 @@ const [isOpen, setIsOpen] = React.useState(true);
                 url='https://seopromarvel.com/seo-services/new-review.mp4'
                 onClose={() => setIsOpens(!isOpens)}
             />
+
         </>
     )
 }

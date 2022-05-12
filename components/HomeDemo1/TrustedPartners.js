@@ -65,26 +65,68 @@ const TrustedPartners = () => {
                             </div>
                             <div className="item">
                             <div className="industry-workfors text-center">
-                              <img src="images/icons/house.svg" alt="Real Estate" />
-                                <h6>Real Estate</h6>
+                              <img src="images/icons/travel-case.svg" alt="Tour & Travels" />
+                                <h6>Tour & Travels</h6>
                                 </div>
                             </div>
                             <div className="item">
                             <div className="industry-workfors text-center">
-                                <img src="images/icons/house.svg" alt="Real Estate" />
-                                <h6>Real Estate</h6>
+                                <img src="images/icons/video-tutorials.svg" alt="Education" />
+                                <h6>Education</h6>
                                 </div>
                             </div>
                             <div className="item">
                             <div className="industry-workfors text-center">
-                              <img src="images/icons/house.svg" alt="Real Estate" />
-                                <h6>Real Estate</h6>
+                              <img src="images/icons/taxi.svg" alt="Transport" />
+                                <h6>Transport</h6>
                                 </div>
                             </div>
                             <div className="item">
                             <div className="industry-workfors text-center">
-                                <img src="images/icons/house.svg" alt="Real Estate" />
-                                <h6>Real Estate</h6>
+                                <img src="images/icons/event.svg" alt="Event" />
+                                <h6>Event</h6>
+                                </div>
+                            </div>
+                            <div className="item">
+                            <div className="industry-workfors text-center">
+                                <img src="images/icons/smartphone.svg" alt="Real Estate" />
+                                <h6>eCommerce</h6>
+                                </div>
+                            </div>
+                            <div className="item">
+                            <div className="industry-workfors text-center">
+                                <img src="images/icons/joystick.svg" alt="Real Estate" />
+                                <h6>Game</h6>
+                                </div>
+                            </div>
+                            <div className="item">
+                            <div className="industry-workfors text-center">
+                                <img src="images/icons/healthcare.svg" alt="Real Estate" />
+                                <h6>Healthcare</h6>
+                                </div>
+                            </div>
+                            <div className="item">
+                            <div className="industry-workfors text-center">
+                                <img src="images/icons/money-growth.svg" alt="Real Estate" />
+                                <h6>Finance</h6>
+                                </div>
+                            </div>
+                            <div className="item">
+                            <div className="industry-workfors text-center">
+                                <img src="images/icons/baker.svg" alt="Restaurant" />
+                                <h6>Restaurant</h6>
+                                </div>
+                            </div>
+                            <div className="item">
+                            <div className="industry-workfors text-center">
+                                <img src="images/icons/mobile-app.svg" alt="On-Demand" />
+                                <h6>On-Demand</h6>
+                                </div>
+                            </div>
+                            <div className="item">
+                            <div className="industry-workfors text-center">
+                                <img src="images/icons/groceries.svg" alt="Grocery" />
+                                <h6>Grocery</h6>
                                 </div>
                             </div>
                         </OwlCarousel> : ''}

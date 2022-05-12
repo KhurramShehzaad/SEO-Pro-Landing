@@ -4,14 +4,15 @@ const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
     nav: true,
-    loop: true,
+    loop: false,
     margin: 25,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplayHoverPause: true,
     navText: [
         "<i class='ri-arrow-left-s-line'></i>",
         "<i class='ri-arrow-right-s-line'></i>",
+
     ],
     responsive: {
         0: {
@@ -27,7 +28,7 @@ const options = {
             items: 4
         },
         1200: {
-            items: 5
+            items: 4
         }
     }
 };
@@ -45,8 +46,8 @@ const AppScreenshotsStyle1 = () => {
             <div className="screenshots-area bg-color ptb-100">
                 <div className="container">
                     <div className="section-title">
-                        <span className="sub-title">WHAT OUR CLIENTS SAY ABOUT US.</span>
-                        <h2>Over 1200+ Satisfied Clients and Growing</h2>
+
+                        <h2>Process</h2>
                     </div>
 
                     {display ? <OwlCarousel
@@ -64,44 +65,67 @@ const AppScreenshotsStyle1 = () => {
                         <div className="single-screenshot-item">
                         <div className="timeline__item" >
 <div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
-<h2>Keyword Report</h2>
-<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+<h2>Web-Audit</h2>
+<p>A comprehensive analysis is performed here, putting your website through several tests, discovering flaws, and providing advice.</p>
 </div></div></div>
 </div>
                         </div>
                         <div className="single-screenshot-item">
                         <div className="timeline__item" >
 <div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
-<h2>Keyword Report</h2>
-<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+<h2>Organize your content</h2>
+<p>For each subject, our content marketing professionals consider your marketing goals, brand personality, and the primary audience.</p>
 </div></div></div>
 </div>
                         </div>
                         <div className="single-screenshot-item">
                         <div className="timeline__item" >
 <div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
-<h2>Keyword Report</h2>
-<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+<h2>Making Content</h2>
+<p>Once you accept these subjects, our experts develop keyword-optimized copy utilizing reputable links and references.</p>
 </div></div></div>
 </div>
                         </div>
                         <div className="single-screenshot-item">
                         <div className="timeline__item" >
 <div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
-<h2>Keyword Report</h2>
-<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+<h2>Sponsored Material</h2>
+<p>You get articles, blog posts, news releases, social media postings, infographics, and videos based on the SEO plan!</p>
 </div></div></div>
 </div>
                         </div>
                         <div className="single-screenshot-item">
                         <div className="timeline__item" >
-<div className="timeline__item__inner"><div className="timeline__content__wrap"><div className="timeline__content bg-gradient3">
-<h2>Keyword Report</h2>
-<p>We research keywords related to your industry, service, area, target audience, and rivals.</p>
+<div className="timeline__item__inner">
+<div className="timeline__content__wrap">
+<div className="timeline__content bg-gradient3">
+<h2>Regular Worksheets</h2>
+<p>This section highlights all posts, link building, competition research, and company profile listing entries made throughout the week.</p>
+</div></div></div>
+</div>
+                        </div>
+                        <div className="single-screenshot-item">
+                        <div className="timeline__item" >
+<div className="timeline__item__inner">
+<div className="timeline__content__wrap">
+<div className="timeline__content bg-gradient3">
+<h2>Regular Ranking Sheets</h2>
+<p>Submissions to competitions and corporate profile listings are also highlighted here.</p>
+</div></div></div>
+</div>
+                        </div>
+                        <div className="single-screenshot-item">
+                        <div className="timeline__item" >
+<div className="timeline__item__inner">
+<div className="timeline__content__wrap">
+<div className="timeline__content bg-gradient3">
+<h2>Final Report</h2>
+<p>We also offer you a detailed report summarizing your website's development and making suggestions for the following cycle.</p>
 </div></div></div>
 </div>
                         </div>
                     </OwlCarousel> : ''}
+                    <span className='timeline-divider' ></span>
                 </div>
             </div>
         </>

@@ -9,6 +9,11 @@ const ModalVideo = dynamic(() => import('react-modal-video'), {
 });
 
 const NavbarStyleTwo = () => {
+  const [isActive, setActive] = React.useState(false);
+
+ const handleToggle = () => {
+   setActive(!isActive);
+ };
   // Popup Video
 const [isOpen, setIsOpen] = React.useState(true);
   const openModal = () => {
@@ -64,260 +69,54 @@ const [isOpen, setIsOpen] = React.useState(true);
                             <div className={classOne} id="navbarSupportedContent">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <Link href="#" activeClassName="active">
-                                            <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
+                                        <Link href="#home" activeClassName="active">
+                                            <a onClick={e => e.preventDefault()} className="nav-link">
                                                 Home
                                             </a>
                                         </Link>
 
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item">
-                                                <Link href="/" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 1</a>
-                                                </Link>
-                                            </li>
 
-                                            <li className="nav-item">
-                                                <Link href="/index-2" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 2</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link href="/index-3" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 3</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link href="/index-4" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 4</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link href="/index-5" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 5</a>
-                                                </Link>
-                                            </li>
-
-                                            <li className="nav-item">
-                                                <Link href="/index-6" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 6</a>
-                                                </Link>
-                                            </li>
-                                        </ul>
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link href="#">
-                                            <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                                About Us
+                                        <Link href="#seo-services">
+                                            <a onClick={e => e.preventDefault()} className=" nav-link">
+                                                Services
                                             </a>
                                         </Link>
 
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item">
-                                                <Link href="/about-simple" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">About Simple</a>
-                                                </Link>
-                                            </li>
 
-                                            <li className="nav-item">
-                                                <Link href="/about-modern" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">About Modern</a>
-                                                </Link>
-                                            </li>
-                                        </ul>
                                     </li>
 
                                     <li className="nav-item megamenu">
-                                        <Link href="#">
-                                            <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                                Pages
+                                        <Link href="#pricing">
+                                            <a onClick={e => e.preventDefault()} className=" nav-link">
+                                                Price
                                             </a>
                                         </Link>
 
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item">
-                                                <div className="container">
-                                                    <div className="row">
-                                                        <div className="col">
-                                                            <h6 className="submenu-title">Pages I</h6>
-                                                            <ul className="megamenu-submenu">
-                                                                <li>
-                                                                    <Link href="/team" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Team 1</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/team-2" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Team 2</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/how-it-works" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>How It Works</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/gallery" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Gallery</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/services" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Services</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/pricing" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Pricing Plan</a>
-                                                                    </Link>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
 
-                                                        <div className="col">
-                                                            <h6 className="submenu-title">Pages II</h6>
-                                                            <ul className="megamenu-submenu">
-                                                                <li>
-                                                                    <Link href="/feedback" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Reviews</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/sign-in" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Sign In</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/sign-up" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Sign Up</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/forget-password" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Forget Password</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/privacy-policy" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Privacy Policy</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/terms-conditions" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Terms & Conditions</a>
-                                                                    </Link>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div className="col">
-                                                            <h6 className="submenu-title">Pages III</h6>
-                                                            <ul className="megamenu-submenu">
-                                                                <li>
-                                                                    <Link href="/screenshots" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Screenshots</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/faq" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>FAQ</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/coming-soon" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Coming Soon</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/404" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>404 Error Page</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/app-download" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>App Download</a>
-                                                                    </Link>
-                                                                </li>
-                                                                <li>
-                                                                    <Link href="/contact" activeClassName="active">
-                                                                        <a onClick={toggleNavbar}>Contact Us</a>
-                                                                    </Link>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div className="col">
-                                                            <a href="https://www.facebook.com/" target="_blank" className="d-block p-0">
-                                                                <img src="images/navbar.jpg" alt="image" />
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link href="#">
-                                            <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                                Features
+                                        <Link href="#trust">
+                                            <a onClick={e => e.preventDefault()} className=" nav-link">
+                                                Testimonials
                                             </a>
                                         </Link>
 
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item">
-                                                <Link href="/features" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Features 1</a>
-                                                </Link>
-                                            </li>
 
-                                            <li className="nav-item">
-                                                <Link href="/features-2" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Features 2</a>
-                                                </Link>
-                                            </li>
-                                        </ul>
                                     </li>
 
-                                    <li className="nav-item">
-                                        <Link href="#">
-                                            <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                            <i className="fas fa-phone-alt"></i>
-                                            </a>
-                                        </Link>
 
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item">
-                                                <Link href="tel:+14692527019" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">+14692527019</a>
-                                                </Link>
-                                            </li>
 
-                                            <li className="nav-item">
-                                                <Link href="mailto:marketing@seopromarvel.com" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">marketing@seopromarvel.com</a>
-                                                </Link>
-                                            </li>
 
-                                            
-
-                                        </ul>
-                                    </li>
-
-                                    
                                 </ul>
                             </div>
 
                             <div className="others-options niwaxbtnvideo">
-                                <Link href="#" >
-                                    <a className="default-btn btn-blue " onClick={e => {e.preventDefault(); openModal()}}>
-                                       Request A Quote
-                                    </a>
-                                </Link>
+
+                                <button className="default-btn btn-blue " onClick={handleToggle}>Request a Quote</button>
                                 <Link href="#" >
                                     <a className="default-btn btn-orange " onClick={e => {e.preventDefault(); openModal()}}>
                                        Free Website Analysis
@@ -327,6 +126,78 @@ const [isOpen, setIsOpen] = React.useState(true);
                         </nav>
                     </div>
                 </div>
+            </div>
+            <div className={isActive ? "niwaxofcanvas offcanvas offcanvas-end show" : " niwaxofcanvas offcanvas offcanvas-end "} aria-modal="true" role="dialog" id="offcanvasExample">
+              <div className="offcanvas-body">
+                <div className="cbtn animation">
+                  <div className="btnclose">
+                  <button type="button" className="btn-close text-reset" onClick={handleToggle}></button></div>
+                </div>
+                <div className="form-block sidebarform">
+                  <h4>Request A Quote</h4>
+                  <form id="contactForm" className="shake mt20" action="https://seopromarvel.com/server.php" method="get">
+                    <div className="row">
+                      <div className="form-group col-sm-12">
+                        <input type="text"  id="name" name="cn" placeholder="Enter name" required />
+                        <div className="help-block with-errors"></div>
+                      </div>
+                      <div className="form-group col-sm-12">
+                        <input type="email"  id="email" name="em" placeholder="Enter email" required />
+                        <div className="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="form-group col-sm-12">
+                        <input type="text" id="mobile" name="pn" placeholder="Enter mobile" required  />
+                        <div className="help-block with-errors"></div>
+                      </div>
+                      <div className="form-group col-sm-12">
+                        <input type="text" name="url" className="" placeholder="Enter Website" required />
+                        <div className="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <textarea id="message" name="msg" rows="5" placeholder="Enter your message" required></textarea>
+                      <div className="help-block with-errors"></div>
+                    </div>
+                    <button type="submit" id="form-submit" className="btn lnk btn-main bg-btn right-pop">Submit <span className="circle"></span></button>
+                    <div id="msgSubmit" className="h3 text-center hidden"></div>
+                    <div className="clearfix"></div>
+                  </form>
+                </div>
+                <div className="getintouchblock mt30">
+                    <span className="text-radius text-light text-animation bg-b">Special offer</span>
+                  <h4>Claim free web maintenance now</h4>
+                  <p className="mt10">Signup to get more information</p>
+                  <div className="media mt15">
+                    <div className="icondive"><img src="images/icons/call.svg" alt="icon" /></div>
+                    <div className="media-body getintouchinfo">
+                      <a href="tel:+14692527019">+14692527019<span></span></a>
+                    </div>
+                  </div>
+                  <div className="media mt15">
+                    <div className="icondive"><img src="images/icons/whatsapp.svg" alt="icon" /></div>
+                    <div className="media-body getintouchinfo">
+                      <a href="https://wa.me/14692527019" target="_blank">+14692527019<span></span></a>
+                    </div>
+                  </div>
+                  <div className="media mt15">
+                    <div className="icondive"><img src="images/icons/mail.svg" alt="icon" /></div>
+                    <div className="media-body getintouchinfo">
+                      <a href="mailto:marketing@seopromarvel.com">marketing@seopromarvel.com<span>Online Support</span></a>
+                    </div>
+                  </div>
+                  <div className="media mt15">
+                    <div className="icondive"><img src="images/icons/map.svg" alt="icon" /></div>
+                    <div className="media-body getintouchinfo">
+                      <a href="https://goo.gl/maps/eKnw9XUzGhwbKTo98" target="_blank">1341 W. Mockingbird Lane, Suite 600W, Dallas, Texas 75247<span>Visit Our Office</span></a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
             </div>
             <ModalVideo
     channel='custom'

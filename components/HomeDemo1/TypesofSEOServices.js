@@ -7,11 +7,18 @@ import {
     resetIdCounter
 } from 'react-tabs';
 resetIdCounter();
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import Script from 'next/script'
+import ContactForm from '@/components/Contact/ContactForm'
+
+
 
 const TypesofSEOServices = () => {
+
     return (
         <>
-            <div className="screenshots-area bg-gradient3 ptb-100">
+            <div className="screenshots-area bg-gradient3 ptb-100" id="seo-services">
                 <div className="container">
                     <div className="section-title ">
 
@@ -91,8 +98,11 @@ const TypesofSEOServices = () => {
             </div>
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+
+          <Link href="#seo-services">
+              <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+          </Link>
           </div>
 
             </div>
@@ -127,8 +137,10 @@ const TypesofSEOServices = () => {
 
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+          <Link href="#seo-services">
+    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+</Link>
           </div>
 
             </div>
@@ -158,8 +170,10 @@ const TypesofSEOServices = () => {
 
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+          <Link href="#seo-services">
+    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+</Link>
           </div>
 
             </div>
@@ -188,8 +202,10 @@ const TypesofSEOServices = () => {
 
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+          <Link href="#seo-services">
+    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+</Link>
           </div>
 
             </div>
@@ -219,8 +235,10 @@ const TypesofSEOServices = () => {
 
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+          <Link href="#seo-services">
+    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+</Link>
           </div>
 
             </div>
@@ -250,8 +268,10 @@ const TypesofSEOServices = () => {
 
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+          <Link href="#seo-services">
+    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+</Link>
           </div>
 
             </div>
@@ -280,8 +300,10 @@ const TypesofSEOServices = () => {
 
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+          <Link href="#seo-services">
+    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+</Link>
           </div>
 
             </div>
@@ -311,8 +333,10 @@ const TypesofSEOServices = () => {
 
             </div>
             <div className="btn-box">
-           <a href="#"  className="default-btn btn-blue">Get In Touch With Us</a>
-          <a href="#" className="default-btn btn-orange">Live Chat</a>
+           <ContactForm />
+          <Link href="#seo-services">
+    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
+</Link>
           </div>
 
             </div>
@@ -322,6 +346,7 @@ const TypesofSEOServices = () => {
                     </div>
                 </div>
             </div>
+
         </>
     )
 }

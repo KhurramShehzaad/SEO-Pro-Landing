@@ -90,9 +90,9 @@ const ClientFeedbackStyle1 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."</p>
+                            <p>"So far I've seen improvements in traffic. They continue to show work like Blogs and other which I believe is what is needed to improve rankings so the costs have started to result in sales. I'm all about organic and I think what they are doing is helplng."</p>
                             <div className="rating d-flex align-items-center justify-content-between">
-                                <h5>Customer Support</h5>
+                                <h5>Maverick</h5>
                                 <div>
                                     <i className="ri-star-fill"></i>
                                     <i className="ri-star-fill"></i>
@@ -112,9 +112,9 @@ const ClientFeedbackStyle1 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."</p>
+                            <p>"Seopromarvel was willing to work with me even though my business is small. It was difficult to find a professional company that could give the time and attention necessary at reasonable rates. They always treat me with the utmost respect and urgency. I have been using them for 3 months and have already seen a difference in the response rate from local customers. I have every confidence that they will get me where I need to be on Google and are a pleasure to work with."</p>
                             <div className="rating d-flex align-items-center justify-content-between">
-                                <h5>Responsive Design</h5>
+                                <h5>HAK</h5>
                                 <div>
                                     <i className="ri-star-fill"></i>
                                     <i className="ri-star-fill"></i>
@@ -134,9 +134,9 @@ const ClientFeedbackStyle1 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type."</p>
+                            <p>"We were apprehensive about hiring another SEO company, as we have had poor experiences in the past. We have been satisfied and reassured with every step during the process thus far with SEO Pro Marvel. We have worked with Oscar directly and we could not recommend him, his team, and their services enough. If you are a company needing help, guidance, and an addition to your team in regards to your SEO, look no further."</p>
                             <div className="rating d-flex align-items-center justify-content-between">
-                                <h5>Design Quality</h5>
+                                <h5>Jeffrey Slomovitz</h5>
                                 <div>
                                     <i className="ri-star-fill"></i>
                                     <i className="ri-star-fill"></i>

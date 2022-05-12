@@ -20,7 +20,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
         <>
 
-            <div className="main-banner-area">
+            <div className="main-banner-area" id="home">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7 col-md-12">
@@ -40,15 +40,15 @@ const [isOpen, setIsOpen] = React.useState(true);
 
 
                                     <div className="niwaxbtnvideo mt30">
-                                    <Link href="/">
-                                        <a className="default-btn btn-orange">Get Started</a>
+                                    <Link href="#">
+                                        <a className="default-btn btn-orange"  onClick="function show()">Get Started</a>
                                     </Link>
 
                                                       <div className="video-btn  d-flex v-center gap10">
 
                                                         <div className="title-hero col-sm-12">
-                                                        <Link href="/">
-                                                            <a className="default-btn btn-blue">Click to find out why you are in the right place!</a>
+                                                        <Link href="#">
+                                                            <a className="default-btn btn-blue" onClick={e => {e.preventDefault(); openModal()}}>Click to find out why you are in the right place!</a>
                                                         </Link>
 
                                                         </div>
@@ -69,7 +69,7 @@ const [isOpen, setIsOpen] = React.useState(true);
               </h3>
             <h5 className="pr-3 pl-3 text-center"> Claim free website maintenance now</h5>
             <p className="text-center">Signup to get more information</p>
-            <form id="contactForm" data-bs-toggle="validator" action="" method="get" className="shake mt30">
+            <form id="contactForm" action="https://seopromarvel.com/server.php" method="get" className="shake mt30">
               <div className="row">
                 <div className="form-group col-sm-6">
                   <input type="text"  id="name" name="cn" placeholder="Enter name" required data-error="Please fill Out" />
