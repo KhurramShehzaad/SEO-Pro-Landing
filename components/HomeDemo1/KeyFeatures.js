@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import InquireNow from '@/components/Contact/InquireNow'
 
 const KeyFeatures = () => {
     return (
@@ -78,9 +79,7 @@ const KeyFeatures = () => {
                             <div className="-cta-btn mt70"><div className="free-cta-title v-center ">
                             <p>Hire a <span>Personal SEO Consultant</span>
                             </p>
-                            <Link href="#keyfeatures">
-                                <a className="default-btn btn-orange" onClick="function show()">Inquire Now</a>
-                            </Link>
+                            <InquireNow />
 
                             </div></div>
 

@@ -4,7 +4,11 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import Typewriter from 'typewriter-effect'
 import Script from 'next/script'
 import dynamic from 'next/dynamic';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+const shoot = () => {
+  javascript:$zopim.livechat.window.show();
 
+}
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
 });
@@ -40,9 +44,8 @@ const [isOpen, setIsOpen] = React.useState(true);
 
 
                                     <div className="niwaxbtnvideo mt30">
-                                    <Link href="#home">
-                                        <a className="default-btn btn-orange"  onClick="function show()">Get Started</a>
-                                    </Link>
+
+                                    <button className="default-btn btn-orange " onClick={shoot} id="js-livechat-open">Get Started</button>
 
                                                       <div className="video-btn  d-flex v-center gap10">
 
@@ -107,19 +110,19 @@ const [isOpen, setIsOpen] = React.useState(true);
                 {/* Banner Images */}
 
                 <div className="banner-shape1">
-                    <img src="images/shape/shape9.png" alt="image" />
+                    <LazyLoadImage src="images/shape/shape9.png" alt="image" />
                 </div>
                 <div className="banner-shape2">
-                    <img src="images/shape/shape7.png" alt="image" />
+                    <LazyLoadImage src="images/shape/shape7.png" alt="image" />
                 </div>
                 <div className="banner-shape3">
-                    <img src="images/shape/shape2.png" alt="image" />
+                    <LazyLoadImage src="images/shape/shape2.png" alt="image" />
                 </div>
                 <div className="banner-shape4">
-                    <img src="images/shape/shape10.png" alt="image" />
+                    <LazyLoadImage src="images/shape/shape10.png" alt="image" />
                 </div>
                 <div className="banner-shape5">
-                    <img src="images/shape/shape11.png" alt="image" />
+                    <LazyLoadImage src="images/shape/shape11.png" alt="image" />
                 </div>
             </div> <Script
   strategy="afterInteractive"

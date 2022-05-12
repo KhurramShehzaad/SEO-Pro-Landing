@@ -1215,6 +1215,21 @@ textarea.form-control {
   .screenshots-area{
     padding: 40px 20px;
   }
+  .texap-nav .others-options{
+    display: none;
+  }
+  .default-btn{
+    font-size: 13px !important;
+  }
+  .trusted-by .industry-workfors{
+    margin-top: 20px;
+  }
+  .btnwithiconside span{
+        font-size: 11px !important;
+  }
+  .btnwithiconside div{
+    font-size: 18px !important;
+  }
 }
 @media (min-width:768px){
   .screenshots-area .owl-stage{

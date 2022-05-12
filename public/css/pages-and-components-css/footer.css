@@ -1,6 +1,6 @@
 .footer-area {
   background-color: #191919;
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 
@@ -347,7 +347,7 @@
   line-height: 2;
 }
 .copyright-area {
-  
+
   text-align: center;
   margin-top: 40px;
 
@@ -360,7 +360,7 @@
 @media only screen and (max-width: 767px) {
   .footer-area {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
   .footer-area.footer-style-two {
     padding-top: 60px;
@@ -400,7 +400,7 @@
   .copyright-area {
     margin-top: 30px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
   }
 }
 

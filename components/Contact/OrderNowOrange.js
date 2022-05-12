@@ -1,7 +1,7 @@
 import React from 'react';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
-const OrderNowOrange = () => {
+const InquireNow = () => {
   const [isActive, setActive] = React.useState(false);
 
  const handleToggle = () => {
@@ -84,4 +84,4 @@ const OrderNowOrange = () => {
     )
 }
 
-export default OrderNowOrange;
+export default InquireNow;

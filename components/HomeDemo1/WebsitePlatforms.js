@@ -10,6 +10,10 @@ resetIdCounter();
 import Link from 'next/link';
 import ContactForm from '@/components/Contact/ContactForm'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+const shoot = () => {
+  javascript:$zopim.livechat.window.show();
+
+}
 
 
 const WebsitePlatforms = () => {
@@ -70,9 +74,7 @@ const WebsitePlatforms = () => {
                                WordPress website traffic is our strength with our high quality SEO solutions. We have worked with thousands of clients, helping them grow their traffic and sales online through WordPress SEO.
                                </p>
                               <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/wordpress.svg" className="lazy" />
@@ -90,9 +92,7 @@ const WebsitePlatforms = () => {
                                We offer Joomla SEO and Joomla website optimization services to assist our clients in building their businesses and generating new leads. Page speed optimization is vital for optimal search engine rankings. Our SEO experts will enable you to reach your objectives by providing high-quality Joomla SEO services websites.
                                </p>
                               <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/joomla-img.svg" className="lazy" />
@@ -109,9 +109,7 @@ const WebsitePlatforms = () => {
                                Squarespace automatically generates SEO-friendly pages with static URLs for every product category. But still you need experts to take care of multiple other factors.
                                </p>
                               <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/squarespace.svg" className="lazy" />
@@ -128,9 +126,7 @@ const WebsitePlatforms = () => {
                                We engage in Drupal SEO. We'll help ensure that your page on the Drupal website is viewed if it's vital to your organization.
                                </p>
                               <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/drupal.svg" className="lazy" />
@@ -147,9 +143,7 @@ const WebsitePlatforms = () => {
                                Even with Shopify's drag-and-drop UI, striking out now in today's crowded e-commerce market is really not straightforward. Therefore choose our services to get the best Shopify SEO.
                                </p>
                              <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/shopify.svg" className="lazy" />
@@ -166,9 +160,7 @@ const WebsitePlatforms = () => {
                                It's critical to know your SEO end goal while creating a Weebly website. Our Weebly SEO Experts will optimize it as you want it to work and do the best SEO marketing for your future and growth.
                                </p>
                               <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/weebly.svg" className="lazy" />
@@ -185,9 +177,7 @@ const WebsitePlatforms = () => {
                                Magento excels at SEO. It is a site with the functionality and programming required for heavy traffic. Alliance Technologies involves providing your e-commerce store on the internet.
                                </p>
                               <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/Magento.svg" className="lazy" />
@@ -204,9 +194,7 @@ const WebsitePlatforms = () => {
                                A good percentage of users on internet start of by using Wix as a platform to build their websites. Wix has the ability to allow users to create HTML5 desktop and mobile sites through user friendly online drag and drop features. We specialize in implementing best SEO practices on this platform and rank our clients higher on google SERPs.
                                </p>
                               <ContactForm />
-                              <Link href="#platforms">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+                              <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                                 </div>
                                 <div className="col-md-4">
                                 <LazyLoadImage src="images/platform/seo-img.svg" className="lazy" />
@@ -217,7 +205,7 @@ const WebsitePlatforms = () => {
                     </div>
                 </div>
             </div>
-          
+
         </>
     )
 }

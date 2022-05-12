@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const FreeTrialStyle1 = () => {
     return (
@@ -10,21 +11,21 @@ const FreeTrialStyle1 = () => {
                         <h2>Start Your 14 Days Free Trials Today!</h2>
 
                         <form className="free-trial-form" onSubmit={e => e.preventDefault()}>
-                            <input 
-                                type="text" 
-                                className="input-newsletter" 
-                                placeholder="Enter Your Email Address" 
-                                name="email" 
+                            <input
+                                type="text"
+                                className="input-newsletter"
+                                placeholder="Enter Your Email Address"
+                                name="email"
                             />
                             <button type="submit" className="default-btn">Get Started</button>
                         </form>
 
                         {/* Shape Images */}
                         <div className="shape8">
-                            <img src="/images/shape/shape7.png" alt="shape" />
+                            <LazyLoadImage src="images/shape/shape7.png" alt="shape" />
                         </div>
                         <div className="shape9">
-                            <img src="/images/shape/shape8.png" alt="shape" />
+                            <LazyLoadImage src="images/shape/shape8.png" alt="shape" />
                         </div>
 
                         {/* Animation lines */}

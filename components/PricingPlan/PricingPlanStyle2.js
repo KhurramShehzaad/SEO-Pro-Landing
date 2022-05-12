@@ -3,7 +3,10 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic';
 import OrderNowBlue from '../Contact/OrderNowBlue';
 import OrderNowOrange from '../Contact/OrderNowOrange';
+const shoot = () => {
+  javascript:$zopim.livechat.window.show();
 
+}
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
 });
@@ -77,13 +80,9 @@ const PricingPlanStyle2 = () => {
 <OrderNowBlue />
 </div>
 <div className="priceaskwithus">
-<Link href="#pricing">
-<a className="livechatbtn d-flex gap10 v-center"  onClick="function show()" >
-<i className="fas fa-comment"></i>
-<div><span>Click here to</span> Live Chat </div>
-</a>
-</Link>
 
+<button onClick={shoot} className="livechatbtn d-flex gap10 v-center"><i className="fas fa-comment"></i>
+<div><span>Click here to</span> Live Chat </div></button>
 </div>
 </div>
 <div className="pricingfooter mt30">
@@ -147,12 +146,8 @@ const PricingPlanStyle2 = () => {
 <OrderNowOrange />
 </div>
 <div className="priceaskwithus">
-<Link href="#pricing">
-<a className="livechatbtn d-flex gap10 v-center"  onClick="function show()" >
-<i className="fas fa-comment"></i>
-<div><span>Click here to</span> Live Chat </div>
-</a>
-</Link>
+<button onClick={shoot} className="livechatbtn d-flex gap10 v-center"><i className="fas fa-comment"></i>
+<div><span>Click here to</span> Live Chat </div></button>
 </div>
 </div>
 <div className="pricingfooter mt30">
@@ -218,12 +213,8 @@ const PricingPlanStyle2 = () => {
 <OrderNowBlue />
 </div>
 <div className="priceaskwithus">
-<Link href="#pricing">
-<a className="livechatbtn d-flex gap10 v-center"  onClick="function show()" >
-<i className="fas fa-comment"></i>
-<div><span>Click here to</span> Live Chat </div>
-</a>
-</Link>
+<button onClick={shoot} className="livechatbtn d-flex gap10 v-center"><i className="fas fa-comment"></i>
+<div><span>Click here to</span> Live Chat </div></button>
 </div>
 </div>
 <div className="pricingfooter mt30">

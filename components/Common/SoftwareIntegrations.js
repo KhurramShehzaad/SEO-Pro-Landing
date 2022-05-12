@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SoftwareIntegrations = () => {
     return (
@@ -13,7 +14,7 @@ const SoftwareIntegrations = () => {
                                 <span className="sub-title">DISCUSS WITH OUR TEAM</span>
                                 <h2>Want More Leads and More Customers to Grow Your Revenue?</h2>
 
-                                <div className="form-block wow slideInLeft" data-wow-delay=".6s">
+                                <div className="form-block wow slideInLeft" >
 <form action="https://seopromarvel.com/server.php" method="get" name="feedback-form">
 <div className="fieldsets row">
 <div className="col-md-6"><input type="text" placeholder="Full Name" name="cn" required /></div>
@@ -35,26 +36,26 @@ const SoftwareIntegrations = () => {
                         <div className="col-lg-6 col-md-12">
                             <ScrollAnimation animateIn="fadeInUp">
                                 <div className="software-integrations-list">
-                                    <img src="/images/shape/bg-shape2.png" alt="bg-shape" />
+                                    <LazyLoadImage src="images/shape/bg-shape2.png" alt="bg-shape" />
 
                                     <ul>
                                         <li>
-                                            <img src="/images/software-integrations/adwords.png" width="64" height="64" className="atlassian" alt="AdWords" />
+                                            <LazyLoadImage src="images/software-integrations/adwords.png" width="64" height="64" className="atlassian" alt="AdWords" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/google.png" width="64" height="64" className="skype" alt="Google" />
+                                            <LazyLoadImage src="images/software-integrations/google.png" width="64" height="64" className="skype" alt="Google" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/w3c.png" className="gdrive" alt="W3C" />
+                                            <LazyLoadImage src="images/software-integrations/w3c.png" className="gdrive" alt="W3C" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/brainstorm.png" className="slack" alt="Creative" />
+                                            <LazyLoadImage src="images/software-integrations/brainstorm.png" className="slack" alt="Creative" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/pagespeed.png" className="jira" alt="pagespeed" />
+                                            <LazyLoadImage src="images/software-integrations/pagespeed.png" className="jira" alt="pagespeed" />
                                         </li>
                                         <li>
-                                            <img src="/images/software-integrations/frame.png" className="frame" with="80" height="101" alt="frame" />
+                                            <LazyLoadImage src="images/software-integrations/frame.png" className="frame" with="80" height="101" alt="frame" />
                                         </li>
                                     </ul>
                                 </div>
@@ -64,7 +65,7 @@ const SoftwareIntegrations = () => {
                 </div>
 
                 <div className="shape6">
-                    <img src="/images/shape/shape5.png" alt="shape" />
+                    <LazyLoadImage src="images/shape/shape5.png" alt="shape" />
                 </div>
             </div>
         </>

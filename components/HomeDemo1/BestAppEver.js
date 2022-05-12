@@ -4,7 +4,11 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import TrustedPartners from '@/components/HomeDemo1/TrustedPartners'
 import dynamic from 'next/dynamic';
 import ContactForm from '@/components/Contact/ContactForm'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+const shoot = () => {
+  javascript:$zopim.livechat.window.show();
 
+}
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
 });
@@ -22,7 +26,8 @@ const BestAppEver = () => {
         <div className="-cta-btn mt70">
           <div className="free-cta-title v-center " >
             <p>Hire a <span>Personal SEO Consultant</span></p>
-             <a href="#"  className="default-btn btn-orange ">Hire Consultant<i className="fas fa-chevron-right fa-icon"></i></a>
+
+             <button onClick={shoot} className="default-btn btn-orange">Hire Consultant<i className="fas fa-chevron-right fa-icon"></i></button>
           </div>
         </div>
       </div>
@@ -44,10 +49,9 @@ const BestAppEver = () => {
 
                                 <div className="btn-box">
                                       <ContactForm />
-                                    <Link href="#services">
-                                        <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-                                    </Link>
-                                  
+
+                                    <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
+
 
                                 </div>
                             </div>
@@ -56,12 +60,12 @@ const BestAppEver = () => {
                         <div className="col-lg-6 col-md-12">
                             <div className="features-image text-center">
                                 <ScrollAnimation animateIn="fadeInUp">
-                                    <img src="images/app/CONVERTIBLE.svg" alt="app-img" />
+                                    <LazyLoadImage src="images/app/CONVERTIBLE.svg" alt="app-img" />
                                 </ScrollAnimation>
 
                                 <div className="shape">
-                                    <img className="shape3" src="images/shape/shape2.png" alt="shape" />
-                                    <img className="shape4" src="images/shape/shape3.png" alt="shape" />
+                                    <LazyLoadImage className="shape3" src="images/shape/shape2.png" alt="shape" />
+                                    <LazyLoadImage className="shape4" src="images/shape/shape3.png" alt="shape" />
                                 </div>
                             </div>
                         </div>
@@ -69,7 +73,7 @@ const BestAppEver = () => {
                 </div>
 
                 <div className="bg-shape1">
-                    <img src="images/shape/bg-shape1.png" alt="bg-shape" />
+                    <LazyLoadImage src="images/shape/bg-shape1.png" alt="bg-shape" />
                 </div>
             </div>
             {/* If you want to change the video need to update videoID */}

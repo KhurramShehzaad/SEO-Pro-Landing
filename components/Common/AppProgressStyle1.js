@@ -3,7 +3,10 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import ContactForm from '@/components/Contact/ContactForm'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+const shoot = () => {
+  javascript:$zopim.livechat.window.show();
 
+}
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
 });
@@ -76,9 +79,8 @@ const [isOpen, setIsOpen] = React.useState(true);
                             <div className="btn-box mt-4 justify-content-center">
                           <ContactForm />
 
-                          <Link href="#trust">
-                              <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-                          </Link>
+
+                          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
                           </div>
                             </div>
 

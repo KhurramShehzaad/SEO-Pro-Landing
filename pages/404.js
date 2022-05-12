@@ -11,11 +11,11 @@ const ErrorPage = () => {
 					<div className="d-table-cell">
 						<div className="container">
 							<div className="error-content">
-								<img src="/images/error.png" alt="image" />
+								<img src="images/error.png" alt="image" />
 								<p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
 
 								<Link href="/">
-									<a className="default-btn">Back To Home</a>
+									<a className="default-btn btn-orange">Back To Home</a>
 								</Link>
 							</div>
 						</div>

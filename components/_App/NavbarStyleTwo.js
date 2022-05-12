@@ -5,6 +5,7 @@ import React from "react";
 import Link from '@/utils/ActiveLink';
 import dynamic from 'next/dynamic';
 import FreeWebAnalysis from '../Contact/FreeWebAnalysis';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
@@ -119,12 +120,14 @@ const [isOpen, setIsOpen] = React.useState(true);
                             <div className="others-options niwaxbtnvideo">
 
                                 <button className="default-btn btn-blue " onClick={handleToggle}>Request a Quote</button>
+                                  
                                 <FreeWebAnalysis />
                             </div>
                         </nav>
                     </div>
                 </div>
             </div>
+            <LazyLoadComponent>
             <div className={isActive ? "niwaxofcanvas offcanvas offcanvas-end show" : " niwaxofcanvas offcanvas offcanvas-end "} aria-modal="true" role="dialog" id="offcanvasExample">
               <div className="offcanvas-body">
                 <div className="cbtn animation">
@@ -132,7 +135,10 @@ const [isOpen, setIsOpen] = React.useState(true);
                   <button type="button" className="btn-close text-reset" onClick={handleToggle}></button></div>
                 </div>
                 <div className="form-block sidebarform">
-                  <h4>Request A Quote</h4>
+
+                  <span className="text-radius text-light text-animation bg-b">Special offer</span>
+                <h4>Claim free web maintenance now</h4>
+                <p className="mt10">Signup to get more information</p>
                   <form id="contactForm" className="shake mt20" action="https://seopromarvel.com/server.php" method="get">
                     <div className="row">
                       <div className="form-group col-sm-12">
@@ -164,9 +170,7 @@ const [isOpen, setIsOpen] = React.useState(true);
                   </form>
                 </div>
                 <div className="getintouchblock mt30">
-                    <span className="text-radius text-light text-animation bg-b">Special offer</span>
-                  <h4>Claim free web maintenance now</h4>
-                  <p className="mt10">Signup to get more information</p>
+<h4 className="mb-4">Request A Quote</h4>
                   <div className="media mt15">
                     <div className="icondive"><img src="images/icons/call.svg" alt="icon" /></div>
                     <div className="media-body getintouchinfo">
@@ -197,6 +201,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
               </div>
             </div>
+            </LazyLoadComponent>
             <ModalVideo
     channel='custom'
     isOpen={!isOpen}

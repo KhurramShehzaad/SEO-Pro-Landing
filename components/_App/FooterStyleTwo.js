@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Script from 'next/script'
+import Script from 'next/script';
+
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 const FooterStyleTwo = () => {
@@ -52,25 +53,12 @@ const FooterStyleTwo = () => {
                 </div>
             </div>
 
-            <LazyLoadComponent>
-    <Script
-    strategy="afterInteractive"
-    dangerouslySetInnerHTML={{
-    __html: `
 
-    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="https://v2.zopim.com/?4N09pK5EDVD29oYXjL1iCm9b3lMMEMWc";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
-$zopim(function() {
-$zopim.livechat.window.show();
-});`,
-    }}
-    /></LazyLoadComponent>
         </>
+
     );
+
 }
 
 export default FooterStyleTwo;

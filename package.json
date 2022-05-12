@@ -11,6 +11,7 @@
     "author": "seopromarvel.com",
     "license": "ISC",
     "dependencies": {
+        "@goranefbl/react-zendesk-chat": "^1.1.1",
         "next": "^12.1.6",
         "react": "^17.0.2",
         "react-accessible-accordion": "^3.3.4",
@@ -30,6 +31,7 @@
         "typewriter-effect": "^2.18.2",
         "typical": "^7.1.1",
         "typist": "^0.1.0",
+        "use-zendesk-widget": "^0.0.8",
         "vue-typer": "^1.2.0"
     }
 }

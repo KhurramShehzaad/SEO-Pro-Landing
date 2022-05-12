@@ -935,6 +935,8 @@ App Progress Area CSS
     color: #050748;
     font-weight: 600;
     line-height: 1;
+    border: 0;
+background: transparent;
 }
 .active .priceoffer {
     background: #ff3381;
@@ -1371,7 +1373,7 @@ Pricing Area CSS
 =================================================*/
 .pricing-area {
   position: relative;
- 
+
 }
 
 .pricing-area.bg-gradient-color {

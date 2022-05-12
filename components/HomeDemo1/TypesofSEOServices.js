@@ -10,9 +10,10 @@ resetIdCounter();
 import Link from 'next/link';
 import ContactForm from '@/components/Contact/ContactForm'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+const shoot = () => {
+  javascript:$zopim.livechat.window.show();
 
-
-
+}
 const TypesofSEOServices = () => {
 
     return (
@@ -65,7 +66,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6 ">
 
-                
+
                 <LazyLoadImage  src="images/types/Small-Business-SEO.svg" className="lazy"   />
             </div>
             <div className="col-md-6  text-left">
@@ -100,9 +101,7 @@ const TypesofSEOServices = () => {
             <div className="btn-box">
            <ContactForm />
 
-          <Link href="#seo-services">
-              <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-          </Link>
+        <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
@@ -138,9 +137,7 @@ const TypesofSEOServices = () => {
             </div>
             <div className="btn-box">
            <ContactForm />
-          <Link href="#seo-services">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
@@ -171,9 +168,7 @@ const TypesofSEOServices = () => {
             </div>
             <div className="btn-box">
            <ContactForm />
-          <Link href="#seo-services">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
@@ -203,9 +198,7 @@ const TypesofSEOServices = () => {
             </div>
             <div className="btn-box">
            <ContactForm />
-          <Link href="#seo-services">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
@@ -236,9 +229,7 @@ const TypesofSEOServices = () => {
             </div>
             <div className="btn-box">
            <ContactForm />
-          <Link href="#seo-services">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
@@ -269,9 +260,7 @@ const TypesofSEOServices = () => {
             </div>
             <div className="btn-box">
            <ContactForm />
-          <Link href="#seo-services">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
@@ -301,9 +290,7 @@ const TypesofSEOServices = () => {
             </div>
             <div className="btn-box">
            <ContactForm />
-          <Link href="#seo-services">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
@@ -334,9 +321,7 @@ const TypesofSEOServices = () => {
             </div>
             <div className="btn-box">
            <ContactForm />
-          <Link href="#seo-services">
-    <a className="default-btn btn-orange"  onClick="function show()">Live Chat</a>
-</Link>
+          <button className="default-btn btn-orange " onClick={shoot}>Live Chat</button>
           </div>
 
             </div>
