@@ -1,8 +1,10 @@
 // Navbar Component Style File Path: public/css/pages-and-components-css/navbar.scss
 
 import React from "react";
+
 import Link from '@/utils/ActiveLink';
 import dynamic from 'next/dynamic';
+import FreeWebAnalysis from '../Contact/FreeWebAnalysis';
 
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
@@ -69,8 +71,8 @@ const [isOpen, setIsOpen] = React.useState(true);
                             <div className={classOne} id="navbarSupportedContent">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <Link href="#home" activeClassName="active">
-                                            <a onClick={e => e.preventDefault()} className="nav-link">
+                                        <Link href="#home" >
+                                            <a  className="nav-link">
                                                 Home
                                             </a>
                                         </Link>
@@ -80,7 +82,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
                                     <li className="nav-item">
                                         <Link href="#seo-services">
-                                            <a onClick={e => e.preventDefault()} className=" nav-link">
+                                            <a  className=" nav-link">
                                                 Services
                                             </a>
                                         </Link>
@@ -90,7 +92,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
                                     <li className="nav-item megamenu">
                                         <Link href="#pricing">
-                                            <a onClick={e => e.preventDefault()} className=" nav-link">
+                                            <a  className=" nav-link">
                                                 Price
                                             </a>
                                         </Link>
@@ -100,7 +102,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
                                     <li className="nav-item">
                                         <Link href="#trust">
-                                            <a onClick={e => e.preventDefault()} className=" nav-link">
+                                            <a  className=" nav-link">
                                                 Testimonials
                                             </a>
                                         </Link>
@@ -117,11 +119,7 @@ const [isOpen, setIsOpen] = React.useState(true);
                             <div className="others-options niwaxbtnvideo">
 
                                 <button className="default-btn btn-blue " onClick={handleToggle}>Request a Quote</button>
-                                <Link href="#" >
-                                    <a className="default-btn btn-orange " onClick={e => {e.preventDefault(); openModal()}}>
-                                       Free Website Analysis
-                                    </a>
-                                </Link>
+                                <FreeWebAnalysis />
                             </div>
                         </nav>
                     </div>

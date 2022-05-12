@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import ContactForm from '@/components/Contact/ContactForm'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
 });
@@ -39,7 +41,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
   <div className="video-box review-vid-details">
 
-  <img src="images/user/vreview.jpg" alt="app-img" />
+  <LazyLoadImage src="images/user/vreview.jpg" alt="app-img" />
   <div
       onClick={e => {e.preventDefault(); openModal()}}
       className="popup-custom "
@@ -57,7 +59,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
                                 <div className="video-box review-vid-details">
 
-                                <img src="images/user/reviewthumb.jpg" alt="app-img" />
+                                <LazyLoadImage src="images/user/reviewthumb.jpg" alt="app-img" />
                                 <div
                                     onClick={e => {e.preventDefault(); openModals()}}
                                     className="popup-custom1 "
@@ -91,13 +93,13 @@ const [isOpen, setIsOpen] = React.useState(true);
 
 
                                 <Link href="#">
-                                    <a ><img src="images/partner/reviews-icon-1.png" width="130" alt="google reviews" /></a>
+                                    <a ><LazyLoadImage src="images/partner/reviews-icon-1.png" width="130" alt="google reviews" /></a>
                                 </Link>
                                 <Link href="#">
-                                    <a ><img src="images/partner/trustpilot.png" width="130"  alt="trustpilot" /></a>
+                                    <a ><LazyLoadImage src="images/partner/trustpilot.png" width="130"  alt="trustpilot" /></a>
                                 </Link>
                                 <Link href="#">
-                                    <a ><img src="images/partner/reviews-icon-3.png" width="130" alt="reviews" /></a>
+                                    <a ><LazyLoadImage src="images/partner/reviews-icon-3.png" width="130" alt="reviews" /></a>
                                 </Link>
                             </div>
                         </div>

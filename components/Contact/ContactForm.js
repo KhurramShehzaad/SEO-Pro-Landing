@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from '@/utils/ActiveLink';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 const ContactForm = () => {
   const [isActive, setActive] = React.useState(false);
@@ -12,6 +12,7 @@ const ContactForm = () => {
         <>
 
           <button className="default-btn btn-blue" onClick={handleToggle}>Get In Touch With Us</button>
+          <LazyLoadComponent>
           <div className={isActive ? "modal fade show" : "modal fade "} id="exampleModal">
   <div className="modal-dialog form-modal">
     <div className="modal-content">
@@ -32,32 +33,32 @@ const ContactForm = () => {
                   <form id="contactForm" action="https://seopromarvel.com/server.php" method="get" >
                       <div className="row">
 
-                          <div className="col-lg-6 col-md-6 col-sm-6">
+                          <div className="col-md-6 col-sm-6">
                               <div className="form-group">
                                   <input type="text" name="cn" className="form-control" id="name" required placeholder="Full Name" />
                               </div>
                           </div>
-                          <div className="col-lg-6 col-md-6 col-sm-6">
+                          <div className="col-md-6 col-sm-6">
                               <div className="form-group">
                                   <input type="email" name="em" className="form-control" id="email" required placeholder="Email Address" />
                               </div>
                           </div>
-                          <div className="col-lg-6 col-md-6 col-sm-6">
+                          <div className="col-md-6 col-sm-6">
                               <div className="form-group">
                                   <input type="text" name="pn" className="form-control" id="phone_number" required placeholder="Phone No" />
                               </div>
                           </div>
-                          <div className="col-lg-6 col-md-6 col-sm-6">
+                          <div className="col-md-6 col-sm-6">
                               <div className="form-group">
                                   <input type="text" name="url" className="form-control" id="msg_subject" placeholder="Enter Website" required />
                               </div>
                           </div>
-                          <div className="col-lg-12 col-md-12 col-sm-12">
+                          <div className="col-md-12 col-sm-12">
                               <div className="form-group">
                                   <textarea name="message" id="message" className="form-control" cols="30" rows="3" required  placeholder="Message"></textarea>
                               </div>
                           </div>
-                          <div className="col-lg-12 col-md-12 col-sm-12 mb-4">
+                          <div className="col-md-12 col-sm-12 mb-4">
                               <button type="submit" className="default-btn btn-orange mb-4 ">
                                   <i className='bx bx-paper-plane'></i> Submit
                               </button>
@@ -77,7 +78,7 @@ const ContactForm = () => {
 
     </div>
   </div>
-</div>
+</div></LazyLoadComponent>
 
         </>
     )

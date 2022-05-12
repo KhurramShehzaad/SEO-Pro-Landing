@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link'
-import Script from 'next/script'
 import dynamic from 'next/dynamic';
+import OrderNowBlue from '../Contact/OrderNowBlue';
+import OrderNowOrange from '../Contact/OrderNowOrange';
 
 const ModalVideo = dynamic(() => import('react-modal-video'), {
     ssr: false
@@ -73,9 +74,7 @@ const PricingPlanStyle2 = () => {
 
                                 <div className="priceodernow">
 <div className="priceoderbtn">
-<Link href="#">
-    <a className="default-btn btn-blue" onClick={e => {e.preventDefault(); openModal()}}>Order Now</a>
-</Link>
+<OrderNowBlue />
 </div>
 <div className="priceaskwithus">
 <Link href="#pricing">
@@ -145,9 +144,7 @@ const PricingPlanStyle2 = () => {
 
                                 <div className="priceodernow">
 <div className="priceoderbtn">
-<Link href="#">
-    <a className="default-btn btn-orange" onClick={e => {e.preventDefault(); openModal()}}>Order Now</a>
-</Link>
+<OrderNowOrange />
 </div>
 <div className="priceaskwithus">
 <Link href="#pricing">
@@ -218,9 +215,7 @@ const PricingPlanStyle2 = () => {
 
                                 <div className="priceodernow">
 <div className="priceoderbtn">
-<Link href="#">
-    <a className="default-btn btn-blue" onClick={e => {e.preventDefault(); openModal()}}>Order Now</a>
-</Link>
+<OrderNowBlue />
 </div>
 <div className="priceaskwithus">
 <Link href="#pricing">

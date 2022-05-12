@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Script from 'next/script'
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 const FooterStyleTwo = () => {
 
@@ -36,7 +37,9 @@ const FooterStyleTwo = () => {
                 <p className="darkcolor">1341 W. Mockingbird Lane, Suite 600W, Dallas, Texas 75247</p>
                 </div>
                 <div className="col-lg-8 col-sm-6">
+                <LazyLoadComponent>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.8737981799577!2d-96.86802128533459!3d32.822108688993076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9c6812deb201%3A0x50b35a1c2b9c994b!2s1341%20W%20Mockingbird%20Ln%2C%20Dallas%2C%20TX%2075247%2C%20USA!5e0!3m2!1sen!2sbs!4v1645651240297!5m2!1sen!2sbs" width="100%" height="250" ></iframe>
+               </LazyLoadComponent>
                 </div>
                 </div>
                 </div>
@@ -49,7 +52,7 @@ const FooterStyleTwo = () => {
                 </div>
             </div>
 
-    
+            <LazyLoadComponent>
     <Script
     strategy="afterInteractive"
     dangerouslySetInnerHTML={{
@@ -65,7 +68,7 @@ $zopim(function() {
 $zopim.livechat.window.show();
 });`,
     }}
-    />
+    /></LazyLoadComponent>
         </>
     );
 }

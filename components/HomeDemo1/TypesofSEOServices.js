@@ -7,10 +7,9 @@ import {
     resetIdCounter
 } from 'react-tabs';
 resetIdCounter();
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import Script from 'next/script'
 import ContactForm from '@/components/Contact/ContactForm'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
@@ -66,7 +65,8 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6 ">
 
-                <img  src="images/types/Small-Business-SEO.svg" className="lazy" />
+                
+                <LazyLoadImage  src="images/types/Small-Business-SEO.svg" className="lazy"   />
             </div>
             <div className="col-md-6  text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">On-page SEO </h3>
@@ -113,7 +113,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6 ">
 
-                <img  src="images/types/off-page.svg" className="lazy" />
+                <LazyLoadImage  src="images/types/off-page.svg" className="lazy" />
             </div>
             <div className="col-md-6 text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">Off-page SEO </h3>
@@ -150,7 +150,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6 ">
 
-                <img  src="images/types/Google-My-Business.svg" className="lazy" />
+                <LazyLoadImage  src="images/types/Google-My-Business.svg" className="lazy" />
             </div>
             <div className="col-md-6 text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">Google My Business (GMB)</h3>
@@ -183,7 +183,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6">
 
-                <img  src="images/types/enterprise-seo.svg" className="lazy" />
+                <LazyLoadImage  src="images/types/enterprise-seo.svg" className="lazy" />
             </div>
             <div className="col-md-6 text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">Enterprise SEO </h3>
@@ -215,7 +215,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6">
 
-                <img  src="images/types/ecommerce-seo.svg" className="lazy" />
+                <LazyLoadImage  src="images/types/ecommerce-seo.svg" className="lazy" />
             </div>
             <div className="col-md-6 text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">Ecommerce SEO </h3>
@@ -248,7 +248,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6">
 
-                <img  src="images/types/local-seo.svg" className="lazy" />
+                <LazyLoadImage  src="images/types/local-seo.svg" className="lazy" />
             </div>
             <div className="col-md-6 text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">Local SEO </h3>
@@ -281,7 +281,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6">
 
-                <img  src="images/types/international-seo.svg" className="lazy" />
+                <LazyLoadImage  src="images/types/international-seo.svg" className="lazy" />
             </div>
             <div className="col-md-6 text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">International SEO</h3>
@@ -313,7 +313,7 @@ const TypesofSEOServices = () => {
                             <div className="row justify-content-center">
                 <div className="col-md-6">
 
-                <img  src="images/types/Small-Business-SEO.svg" className="lazy" />
+                <LazyLoadImage  src="images/types/Small-Business-SEO.svg" className="lazy" />
             </div>
             <div className="col-md-6 text-left">
                 <h3 className="text-radius text-light text-animation bg-b mb-3">Small Business SEO </h3>

@@ -1371,7 +1371,7 @@ Pricing Area CSS
 =================================================*/
 .pricing-area {
   position: relative;
-  z-index: 1;
+ 
 }
 
 .pricing-area.bg-gradient-color {

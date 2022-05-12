@@ -40,7 +40,7 @@ const [isOpen, setIsOpen] = React.useState(true);
 
 
                                     <div className="niwaxbtnvideo mt30">
-                                    <Link href="#">
+                                    <Link href="#home">
                                         <a className="default-btn btn-orange"  onClick="function show()">Get Started</a>
                                     </Link>
 

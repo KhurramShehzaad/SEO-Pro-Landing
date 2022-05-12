@@ -1,5 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -64,7 +65,7 @@ const ClientFeedbackStyle1 = () => {
                                 <i className="fas fa-quote-left size-40"></i>
 
                                     <div className="title">
-                                    <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
+                                    <LazyLoadImage src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot"  />
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +87,7 @@ const ClientFeedbackStyle1 = () => {
                                 <div className="d-flex align-items-center">
                                     <i className="fas fa-quote-left size-40"></i>
                                     <div className="title">
-                                  <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
+                                  <LazyLoadImage src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot"  />
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +109,7 @@ const ClientFeedbackStyle1 = () => {
                                 <div className="d-flex align-items-center">
                                     <i className="fas fa-quote-left size-40"></i>
                                     <div className="title">
-                                      <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
+                                      <LazyLoadImage src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot"  />
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +131,9 @@ const ClientFeedbackStyle1 = () => {
                                 <div className="d-flex align-items-center">
                                     <i className="fas fa-quote-left size-40"></i>
                                     <div className="title">
-                                        <img src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot" />
+                                        
+                                        <LazyLoadImage src="images/partner/trustpilot.png" width="130" height="67" alt="trustpilot"  />
+    
                                     </div>
                                 </div>
                             </div>

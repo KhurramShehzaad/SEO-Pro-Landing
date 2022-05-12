@@ -1,6 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import ContactForm from '@/components/Contact/ContactForm'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Features = () => {
 
@@ -12,15 +13,15 @@ const Features = () => {
                     <div className="whychooseniwax v-center">
                         <div className="niwaxawardrow1">
                 <div className="awardbgwithtext">
-                  <img src="images/icons/moz-badge.png" alt="MOZ" className="lazy wow slideInUp" width="150" height="150" />
+                  <LazyLoadImage src="images/icons/moz-badge.png" alt="MOZ" className="lazy wow slideInUp" width="150" height="150" />
 
                 </div>
                 <div className="awardbgwithtext">
-                  <img src="images/icons/semrush.png" alt="SE Mrushh" className="lazy wow slideInUp "  width="150" height="150" />
+                  <LazyLoadImage src="images/icons/semrush.png" alt="SE Mrushh" className="lazy wow slideInUp "  width="150" height="150" />
 
                 </div>
                 <div className="awardbgwithtext">
-                  <img src="images/icons/ahref.png" alt="ahref" className="lazy wow slideInUp" width="150" height="150" />
+                  <LazyLoadImage src="images/icons/ahref.png" alt="ahref" className="lazy wow slideInUp" width="150" height="150" />
 
                 </div>
               </div>
@@ -33,22 +34,22 @@ const Features = () => {
                 <div className="pairofbtn mt40">
                   <ContactForm />
                   <a href="#" className="btnwithiconside d-flex gap10 v-center">
-                    <img src="images/icons/whatsapp.svg" width="42" height="42" alt="whatsapp" />
+                    <LazyLoadImage src="images/icons/whatsapp.svg" width="42" height="42" alt="whatsapp" />
                     <div> <span>Or - Just Give Us A Call:</span>+14692527019 </div>
                   </a>
                 </div>
               </div>
               <div className="niwaxawardrow1">
                 <div className="awardbgwithtext">
-                  <img src="images/icons/alexa.png" alt="alexa"  className="lazy wow slideInUp"  width="150" height="150" />
+                  <LazyLoadImage src="images/icons/alexa.png" alt="alexa"  className="lazy wow slideInUp"  width="150" height="150" />
 
                 </div>
                 <div className="awardbgwithtext">
-                  <img src="images/icons/gmb-badge.png" alt="GMB"  className="lazy wow slideInUp"  width="150" height="150" />
+                  <LazyLoadImage src="images/icons/gmb-badge.png" alt="GMB"  className="lazy wow slideInUp"  width="150" height="150" />
 
                 </div>
                 <div className="awardbgwithtext">
-                  <img src="images/icons/analytics-badge.png" alt="Analytics"  className="lazy wow slideInUp"  width="150" height="150" />
+                  <LazyLoadImage src="images/icons/analytics-badge.png" alt="Analytics"  className="lazy wow slideInUp"  width="150" height="150" />
 
                 </div>
               </div>
